@@ -1,0 +1,142 @@
+//flashcard.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="flashcard.css">
+<body id='body'>
+<script>
+var div1=document.createElement("div");
+div1.id='d1';
+var p1=document.createElement("p");
+p1.id='answer';
+
+
+var p=document.createElement("p");
+p.id='que';
+
+var p2=document.createElement("p");
+p2.innerHTML="Show/Hide Answer"
+p2.id='sh';
+p2.onclick=function(){
+getans()
+};
+var but=document.createElement("button");
+but.innerHTML="EDIT";
+but.id="edi";
+var but1=document.createElement("button");
+but1.innerHTML="DELETE";
+but1.id="del";
+but1.onclick=function(){
+remove()
+};
+div1.appendChild(p);
+div1.appendChild(p1);div1.appendChild(p2);
+div1.appendChild(but);
+div1.appendChild(but1);
+var count=0;
+function down()
+{
+   
+document.body.appendChild(div1);
+document.getElementById("d1").style.width="272px";
+document.getElementById("d1").style.height="151px";
+document.getElementById("d1").style.border="outset"
+document.getElementById("d1").style.background="white";
+
+var x=document.getElementById("q").value;
+document.getElementById("que").innerHTML=x;
+}
+function getans(){
+var y=document.getElementById("ans").value;
+document.getElementById("sh").innerHTML=y;
+
+}
+function remove(){
+d1.remove();
+}
+</script>
+<h1>Flashcards</h1>
+<div id="a1">
+<p1>Add Quesion</p1>
+</div>
+<br>
+<br>
+<div id="a2">
+<h3>Question</h3>
+<p><textarea rows="5" cols="66" id="q"></textarea></p>
+<h3>Answer</h3>
+<p><textarea rows="5" cols="66" id="ans"></textarea></p>
+<p><input type="button"  value="save" id="next" onclick="down()"></p>
+</div>
+<br>
+
+</body>
+</html>
+
+
+//flashcard.css
+
+#a1
+{
+position: relative;
+left:25px;
+width: 11%;
+height: 25px;
+background: white;
+border-style:solid;
+border-color: #ff9900;
+}
+#a2
+{
+position: relative;
+left:25px;
+padding-left: 35px;
+width: 55%;
+height: 375px;
+background: white;
+border-style:solid;
+border-color: #ff9900;
+}
+#q
+{
+width: 85%;
+height: 65px;
+border-color:green;
+}
+#ans
+{
+width: 85%;
+height: 65px;
+border-color:blue ;
+}
+
+#a3
+{   position:absolute;
+width: 41%;
+height: 85px;
+background: white;
+border-style:solid;
+border-color: #ff9900;
+}
+#del
+{
+background-color: blue;
+position:relative;
+top:22px;
+left:45px;
+}
+#edi
+{
+background-color: blue;
+position:relative;
+top:22px;
+}
+#next{
+border-color: green;
+width: 22%;
+height:22px;
+position: relative;
+left:145px;
+}
+
