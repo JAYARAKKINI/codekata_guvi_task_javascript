@@ -1,0 +1,42 @@
+#a1
+{
+	position: relative;
+	left:25px;
+	width: 11%;
+	height: 25px;
+	background: white;
+	border-style:solid;
+	border-color: #ff9900;
+}
+#a2
+{
+	position: relative;
+	left:25px;
+	padding-left: 35px;
+	width: 40%;
+	height: 250px;
+	background: white;
+	border-style:solid;
+	border-color: #ff9900;
+}
+#q
+{
+	width: 60%;
+	height: 65px;
+	border-color:green;
+}
+#ans
+{
+	width: 60%;
+	height: 65px;
+	border-color:blue ;
+}
+
+#a3
+{   position:absolute;
+	width: 41%;
+	height: 85px;
+	background: white;
+	border-style:solid;
+	border-color: #ff9900;
+}
