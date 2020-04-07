@@ -14,6 +14,6 @@ inp.on("line",(data)=>{
        console.log(l);
    }
    else{
-       console.log('no')
+       console.log('-1')
    }
  });
