@@ -11,5 +11,7 @@ console.log(['Hello', ' ', 'World'].join(''));
 
 //another method without concat()
 
-const str = 'Hello' + ' ' + 'World';
-console.log(str)
+function join(a,b,c){
+  return a+b+c;
+}
+console.log(join("Hello"," ","World"));
