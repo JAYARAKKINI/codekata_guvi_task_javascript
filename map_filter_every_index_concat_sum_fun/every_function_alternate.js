@@ -1,27 +1,18 @@
-//using every() function
-
-var ages = [32, 33, 16, 40];
-
-function checkAdult(age) {
-  return age >= 18;
+const eve = (array, callback) => {
+var count=0;
+  for(var i=0;i<array.length;i++){
+    if(callback(array[i]))
+      {
+        count+=1;
+      }
+  }
+  if(count==array.length){
+    return true
+  }
+  else
+    {
+      return false
+    }
 }
-
-function myFunction() {
-console.log(ages.every(checkAdult));
-}
-
-//without using every()
-
-var ages = [32, 33, 16, 40];
-var con=[];
-for(var i=0;i<ages.length;i++){
- if(ages[i] >= 18){
-     con.push(ages[i])
- }
-}
-if((con.length)==(ages.length)){
-  console.log("true")
-}
-else{
-    console.log("false")
-}
+const every =(value)=>value>0
+console.log(eve([10,30,50,80,12], every) )
