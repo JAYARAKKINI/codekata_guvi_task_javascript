@@ -4,4 +4,4 @@ const concate = (arr1,arr2) => {
   }
   return arr1.join(" ")
 }
-console.log(concate([1,2,3,4],[5,6,7,8]))
+console.log(concate([1,2,3,4,5],[6,7,8,9,10]))
