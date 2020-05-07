@@ -1,17 +1,7 @@
-//using concat() function
-
-const str1 = 'Hello';
-const str2 = str1.concat(' ', 'World');
-console.log(str2)
-
-
-//without using concat() function
-
-console.log(['Hello', ' ', 'World'].join('')); 
-
-//another method without concat()
-
-function join(a,b,c){
-  return a+b+c;
+const concate = (arr1,arr2) => {
+  for(var i=0;i<arr2.length;i++){
+    arr1.push(arr2[i]);
+  }
+  return arr1
 }
-console.log(join("Hello"," ","World"));
+console.log(concate([1,2,3,4],[5,6,7,8]))
