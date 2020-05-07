@@ -7,4 +7,4 @@ const index = (array, callback) => {
   }
 }
 const indexval =(value)=>value==2
-console.log(index([2,3,5,8,12], indexval))
+console.log(index([12,7,10,6,2], indexval))
