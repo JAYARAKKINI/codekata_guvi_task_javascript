@@ -1,23 +1,23 @@
 const readline=require('readline');
 const inp=readline.createInterface({input:process.stdin});
-const a=[];
+const n=[];
 inp.on("line",(data)=>{
-    a.push(data);
+    n.push(data);
 });
 inp.on("close",()=>{
-    var b=a[1].split(" ");
-    var k=parseInt(a[2]);
-    var s=[];
-    for(var i=0;i<b.length;i++)
+    var a=n[1].split(" ");
+    var b=parseInt(n[2]);
+    var c=[];
+    for(var i=0;i<a.length;i++)
     {
-        if(parseInt(b[i])%k==0)
+        if(parseInt(a[i])%b==0)
         {
-            s.push("1");
+            c.push("1");
         }
         else
         {
-            s.push("0");
+            c.push("0");
         }
     }
-    console.log(s.join(" "));
+    console.log(c.join(" "));
 });
