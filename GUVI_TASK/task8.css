@@ -51,7 +51,7 @@ color:white;
 	width:29%;
 	height:300px;
 	position:absolute;
-	float:center;
+	float:right;
 	left:945px;
 	border:1px solid #D8DDE3;
 }
@@ -68,3 +68,11 @@ color:white;
   height: 500px;
   width: 150%;
 	}
+.rightside h1{
+	position:absolute;
+	left:10px;
+}
+.rightside i{
+	position:absolute;
+	left:1000px;
+}
