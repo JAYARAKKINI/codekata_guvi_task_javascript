@@ -1,0 +1,35 @@
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+		font-family: Arial, Helvetica, sans-serif;
+    }
+    .fixed-header{
+        width: 100%;
+		height:100%;
+        position: fixed;        
+        background-image: linear-gradient(to right, #54F0DB , #8A42B6);
+        padding: 10px 0;
+		top: 0;
+    }
+	.fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background-color:white;
+        padding: 10px 0;
+		bottom: 0;
+    }
+    .container{
+		left:100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    nav a{
+        color: white;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+	#border{
+	border: 1px solid white;
+	border-radius: 30px;
+}
