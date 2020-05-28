@@ -13,7 +13,6 @@ border: 1px solid black;
 </style>
 </head>
 <body id="bodyofnewspaper">
-<img id="img1" src="https://dcassetcdn.com/design_img/795262/463872/463872_4727683_795262_image.jpg" style="height:120px;width:170px">	
 <script>
     
        window.onload = function() {
@@ -73,9 +72,41 @@ border: 1px solid black;
 		 heading6.appendChild(h6_text);
 	     document.body.appendChild(heading6);
 		 
-		 var br=document.createElement("br");
+		 
+		 var headright=document.createElement("h4");
+		 var h6_text=document.createTextNode("POLITICS");
+		 headright.setAttribute("style","margin-left:750px;font-family:Bodoni MT");
+		 headright.appendChild(h6_text);
+	     document.body.appendChild(headright);
 		 
 		 
+		 
+		 var img1=document.createElement("img");
+		 img1.setAttribute("src","https://images.unsplash.com/photo-1519255122284-c3acd66be602?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80")
+		 img1.setAttribute("width","700");
+		 img1.setAttribute("height","200");
+		 var img2=document.createElement("img");
+		 img2.setAttribute("src","https://st.focusedcollection.com/14026668/i/650/focused_173083946-stock-photo-portrait-young-women-holding-american.jpg")
+		 img2.setAttribute("width","280");
+		 img2.setAttribute("height","220");
+		 img2.setAttribute("style","margin-left:50px")
+	     document.body.appendChild(img1);
+	     document.body.appendChild(img2);
+		 
+		 
+		 
+		 var heading7=document.createElement("heading7");
+		 var h7_text=document.createTextNode("By David D. Kirlpotrick and Corbella Gall");
+		 heading7.setAttribute("style","margin-left:1500px;font-size:14px;font-family:Bodoni MT;font:underline");
+		 heading7.appendChild(h7_text);
+	     document.body.appendChild(heading7);
+		 
+		 
+		 var heading8=document.createElement("p");
+		 var h8_text=document.createTextNode("The transition to electric vehicles (EVs) is just beginning and with automakers and other countries making significant commitments to phase out conventional internal combustion engine (ICE) vehicles, the future for EVs is bright.    But electrification of transportation (e-mobility) goes well beyond passenger vehicles to include fleet vehicles (cars and trucks), mass transit buses, light rail, ships and even non-road vehicles like forklifts.The rationale is simple: electric vehicles have lower cost of ownership than their conventionally powered peers, they emit less pollution, and they ena emerging mobility technologies and business models.");
+		 heading8.setAttribute("style","width:61%;align:justify;margin-left:20px;font-size:14px;font-family:Bodoni MT");
+		 heading8.appendChild(h8_text);
+	     document.body.appendChild(heading8);
 		 }
     </script>
 </body>
