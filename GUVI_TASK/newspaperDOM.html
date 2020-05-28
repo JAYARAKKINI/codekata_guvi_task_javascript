@@ -1,0 +1,82 @@
+<html>
+<head><title>Newspaper Using DOM</title>
+<style>
+body{
+border: 1px solid black;
+  margin-right: 90px;
+  margin-left: 100px;
+  margin-top:10px;
+  height:250%;
+  background-color:#E7E8EE;
+  box-shadow: -5px -5px 10px 0px #333;
+}
+</style>
+</head>
+<body id="bodyofnewspaper">
+<img id="img1" src="https://dcassetcdn.com/design_img/795262/463872/463872_4727683_795262_image.jpg" style="height:120px;width:170px">	
+<script>
+    
+       window.onload = function() {
+
+         var heading = document.createElement("heading");
+		  var h_text = document.createTextNode("A chinese company to build fake moon to replace the city");
+		  heading.setAttribute("style","font-family:Bodoni MT;font-size:14;border:1px solid black;align:left");
+		  heading.appendChild(h_text);
+		  document.body.appendChild(heading);
+		  
+		  
+		  var heading1 = document.createElement("heading1");
+         var h1_text = document.createTextNode("The Rising Sun");
+		 heading1.setAttribute("style","font-family:Bodoni MT;font-size:70");
+         heading1.appendChild(h1_text);
+         document.body.appendChild(heading1);
+		 
+		 var heading2 = document.createElement("heading2");
+		  var h2_text = document.createTextNode("Google workers walk out over treatment of women work place");
+		  heading2.setAttribute("style","font-family:Bodoni MT;font-size:14;border:1px solid black;align:left");
+		  heading2.appendChild(h2_text);
+		  document.body.appendChild(heading2);
+		 
+		 
+		 var line1=document.createElement("hr");
+		 heading.appendChild(line1);
+		 document.body.appendChild(line1);
+		 
+		 var heading3=document.createElement("heading3");
+		 var h3_text=document.createTextNode("wednesday, October 24,2018 - Florida - United States");
+		 heading3.setAttribute("style","font-family:Bodoni MT;font-size:16");
+		 heading3.appendChild(h3_text);
+		 document.body.appendChild(heading3);
+		 
+		 var heading4=document.createElement("heading4");
+		 var h4_text=document.createTextNode("www.therisingsun.org");
+		 heading4.setAttribute("style","font-family:Bodoni MT;font-size:16");
+		 heading4.setAttribute("style","margin-left:150px");
+		 heading4.appendChild(h4_text);
+		 document.body.appendChild(heading4);
+		 
+		 var heading5=document.createElement("heading5");
+		 var h5_text=document.createTextNode("Volume of 34 / Price 52 / Page 01 of 23");
+		 heading5.setAttribute("style","font-family:Bodoni MT;font-size:16");
+		 heading5.setAttribute("style","margin-left:250px");
+		 heading5.appendChild(h5_text);
+	     document.body.appendChild(heading5);
+		 
+		 
+		 var line2=document.createElement("hr");
+		 heading.appendChild(line2);
+		 document.body.appendChild(line2);
+		 
+		 var heading6=document.createElement("heading6");
+		 var h6_text=document.createTextNode("ELECTRICAL CARS:THE FUTURE OF TRANSPORTATION");
+		 heading6.setAttribute("style","margin-right:350px;font-size:40px;font-family:Bodoni MT");
+		 heading6.appendChild(h6_text);
+	     document.body.appendChild(heading6);
+		 
+		 var br=document.createElement("br");
+		 
+		 
+		 }
+    </script>
+</body>
+</html>
