@@ -3,10 +3,7 @@
 <style>
 body{
 border: 1px solid black;
-  margin-right: 90px;
-  margin-left: 100px;
-  margin-top:10px;
-  height:250%;
+  height:200%;
   background-color:#E7E8EE;
   box-shadow: -5px -5px 10px 0px #333;
 }
@@ -26,13 +23,13 @@ border: 1px solid black;
 		  
 		  var heading1 = document.createElement("heading1");
          var h1_text = document.createTextNode("The Rising Sun");
-		 heading1.setAttribute("style","font-family:Bodoni MT;font-size:70");
+		 heading1.setAttribute("style","font-family:Bodoni MT;font-size:95");
          heading1.appendChild(h1_text);
          document.body.appendChild(heading1);
 		 
 		 var heading2 = document.createElement("heading2");
 		  var h2_text = document.createTextNode("Google workers walk out over treatment of women work place");
-		  heading2.setAttribute("style","font-family:Bodoni MT;font-size:14;border:1px solid black;align:left");
+		  heading2.setAttribute("style","font-family:Bodoni MT;font-size:14;border:1px solid black;absolute:right");
 		  heading2.appendChild(h2_text);
 		  document.body.appendChild(heading2);
 		 
@@ -50,63 +47,209 @@ border: 1px solid black;
 		 var heading4=document.createElement("heading4");
 		 var h4_text=document.createTextNode("www.therisingsun.org");
 		 heading4.setAttribute("style","font-family:Bodoni MT;font-size:16");
-		 heading4.setAttribute("style","margin-left:150px");
+		 heading4.setAttribute("style","margin-left:190px");
 		 heading4.appendChild(h4_text);
 		 document.body.appendChild(heading4);
 		 
 		 var heading5=document.createElement("heading5");
 		 var h5_text=document.createTextNode("Volume of 34 / Price 52 / Page 01 of 23");
 		 heading5.setAttribute("style","font-family:Bodoni MT;font-size:16");
-		 heading5.setAttribute("style","margin-left:250px");
+		 heading5.setAttribute("style","margin-left:350px");
 		 heading5.appendChild(h5_text);
 	     document.body.appendChild(heading5);
 		 
 		 
-		 var line2=document.createElement("hr");
-		 heading.appendChild(line2);
-		 document.body.appendChild(line2);
+		var line2=document.createElement("hr");
+		heading.appendChild(line2);
+		document.body.appendChild(line2);
+		  
+		var div=document.createElement("div");
+		
+		var leftside=document.createElement("div");
+		leftside.style.position="absolute";
+		leftside.style.width="70%";
+		leftside.style.left="10px";
+		
 		 
-		 var heading6=document.createElement("heading6");
-		 var h6_text=document.createTextNode("ELECTRICAL CARS:THE FUTURE OF TRANSPORTATION");
+		 var left1=document.createElement("div");
+		 
+		 var heading6=document.createElement("h1");
+		 heading6.innerHTML="ELECTRIC CARS: THE FUTURE OF TRANSPORATION";
 		 heading6.setAttribute("style","margin-right:350px;font-size:40px;font-family:Bodoni MT");
-		 heading6.appendChild(h6_text);
-	     document.body.appendChild(heading6);
-		 
-		 
-		 var headright=document.createElement("h4");
-		 var h6_text=document.createTextNode("POLITICS");
-		 headright.setAttribute("style","margin-left:750px;font-family:Bodoni MT");
-		 headright.appendChild(h6_text);
-	     document.body.appendChild(headright);
-		 
-		 
-		 
+		 left1.appendChild(heading6);
 		 var img1=document.createElement("img");
-		 img1.setAttribute("src","https://images.unsplash.com/photo-1519255122284-c3acd66be602?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80")
-		 img1.setAttribute("width","700");
-		 img1.setAttribute("height","200");
-		 var img2=document.createElement("img");
-		 img2.setAttribute("src","https://st.focusedcollection.com/14026668/i/650/focused_173083946-stock-photo-portrait-young-women-holding-american.jpg")
-		 img2.setAttribute("width","280");
-		 img2.setAttribute("height","220");
-		 img2.setAttribute("style","margin-left:50px")
-	     document.body.appendChild(img1);
-	     document.body.appendChild(img2);
+		 img1.setAttribute("src","https://images.unsplash.com/photo-1519255122284-c3acd66be602?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+		 left1.appendChild(img1);
+		 img1.style.width="700";
+		 img1.style.height="200px";
 		 
 		 
-		 
-		 var heading7=document.createElement("heading7");
-		 var h7_text=document.createTextNode("By David D. Kirlpotrick and Corbella Gall");
-		 heading7.setAttribute("style","margin-left:1500px;font-size:14px;font-family:Bodoni MT;font:underline");
-		 heading7.appendChild(h7_text);
-	     document.body.appendChild(heading7);
-		 
+		 var heading7=document.createElement("p");
+		 heading7.innerHTML="By David D. Kirlpotrick and Corbella Gall";
+		 heading7.setAttribute("style","font-size:14px;font-family:Bodoni MT");
+		 left1.appendChild(heading7);
 		 
 		 var heading8=document.createElement("p");
-		 var h8_text=document.createTextNode("The transition to electric vehicles (EVs) is just beginning and with automakers and other countries making significant commitments to phase out conventional internal combustion engine (ICE) vehicles, the future for EVs is bright.    But electrification of transportation (e-mobility) goes well beyond passenger vehicles to include fleet vehicles (cars and trucks), mass transit buses, light rail, ships and even non-road vehicles like forklifts.The rationale is simple: electric vehicles have lower cost of ownership than their conventionally powered peers, they emit less pollution, and they ena emerging mobility technologies and business models.");
-		 heading8.setAttribute("style","width:61%;align:justify;margin-left:20px;font-size:14px;font-family:Bodoni MT");
-		 heading8.appendChild(h8_text);
-	     document.body.appendChild(heading8);
+		 heading8.innerHTML="The transition to electric vehicles (EVs) is just beginning and with automakers and other countries making significant commitments to phase out conventional internal combustion engine (ICE) vehicles, the future for EVs is bright.    But electrification of transportation (e-mobility) goes well beyond passenger vehicles to include fleet vehicles (cars and trucks), mass transit buses, light rail, ships and even non-road vehicles like forklifts.The rationale is simple: electric vehicles have lower cost of ownership than their conventionally powered peers, they emit less pollution, and they ena emerging mobility technologies and business models."
+		 heading8.setAttribute("style","font-size:14px;font-family:Bodoni MT");
+		 left1.appendChild(heading8);
+
+		 var heading9=document.createElement("p");
+		 heading9.innerHTML="Considering the environmental pollution and the cost of cars, many people in United states go for electronic vechicles(EVs) Thy are cost effective and fuel free EVs are partially or fully and which make them even more convenient for users. These vehicles used to be high but not anyone Now it has become.";
+		 heading9.setAttribute("style","font-size:14px;font-family:Bodoni MT");
+		 left1.appendChild(heading9);
+		 
+		 var heading10=document.createElement("p");
+		 heading10.innerHTML="_______________________________________________________________________________________________________________________________________";
+		 heading10.setAttribute("style","font-size:14px;font-family:Bodoni MT");
+		 left1.appendChild(heading10);
+		 
+		 var line3=document.createElement("hr");
+		 div.appendChild(leftside);
+		 leftside.appendChild(left1);
+
+		 var leftone=document.createElement("div");
+		 leftone.style.position="absolute";
+		 leftone.style.width="50%";
+		 leftone.style.height="flex";
+		 leftone.style.left="10px";
+		
+		 var lefttwo=document.createElement("div");
+		 lefttwo.style.position="absolute";
+		 lefttwo.style.width="50%";
+		 lefttwo.style.height="flex";
+		 lefttwo.style.left="10px";
+		
+		 var rightone=document.createElement("div");
+		 rightone.style.position="absolute";
+		 rightone.style.width="50%";
+		 rightone.style.height="flex";
+		 rightone.style.right="20px";
+		 
+         var righttwo=document.createElement("div");
+		 righttwo.style.position="absolute";
+		 righttwo.style.width="50%";
+		 righttwo.style.height="flex";
+		 righttwo.style.right="10px";
+		
+		var headleft1 = document.createElement("h3");
+		headleft1.setAttribute("style","font-size:14px;border:2px solid #E7E8EE;margin-left:45px;");
+		headleft1.innerHTML="WORLD'S FIRST UNDERWATER HOTEL VILLA";
+		lefttwo.setAttribute("style","margin-left:15%");
+		var imgleft1=document.createElement("img");
+		imgleft1.setAttribute("src","data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUVGBgYGBUYFxgXFhcYGBcXFxUVFxUYHSggGBolGxcVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGi0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAIDBAYHAQj/xABGEAABAwIDBgMFBgMGAgsAAAABAAIRAyEEEjEFBkFRYXETIpEygaGx8CNCUsHR4QcUYhYzQ3KS8WOyFRckRFNUgqLC0uL/xAAaAQADAQEBAQAAAAAAAAAAAAABAgMABAUG/8QALBEAAgICAgECBAUFAAAAAAAAAAECEQMhEjEEQVEiMmHwExQjwfEFM4Gx0f/aAAwDAQACEQMRAD8AjobSBNohavYWzfGEnRcs2Bizo4RPFdM3e3no06WWZdPsi5PYIKVKmznxTT7Yedu4xN/s63qrGG2o598jhPOEXpPMXTdnSADu83qvP7PDqtF4qd4gWo1mZO73dMO7/VawOEL1oWMYbFbHcEyh4tI6yFscTTEqjiKAhFIz2D8LtWbXRVmMEIBUogKniKjtA4pZToRhrHbZDdDJ5IBjdq1HggWQfaOOFNrnF3s3MoJW3xpAaqLlOT0RlJ9Gjp1uZTHYxgIzELnmN3se4+QQOZVTH4+o5pOb0TfgsrjycYm+x+8lGnxCzOM338wyiQCsh4RNySUnNAV44Utk5Z29HTt2dsOxFdrROXUrdbQoRTdfgVyf+HGJjENEWgrqu2MXFF5/pK55v4zqg24HHPBl59/zRFuCIi3JR7PZLp+tVsKbGlosutOqZxtXaIsNR8vuWP3ipeb3reMAgwsXvM3ze9JJl8MekR4Fvs91oQ2yzeANx3C0w0VfE+cl/VdY0E93m/aJ2+GHbVGQnVP3cb5iqW9uIy1mciU2f5yHhawmH2/sFtOnLdUDoYIOc0NMHitXtPHgVgHXCzuLpOOIzUhobKR0OglgKENfRqDS4KrVcL/MtyB16fZGsLjfFBDm5agEXWVr1nUahIsZv1RjFuwSklRe2Zsh9GoHrT4HaFRjrNBnoocBtClXpiCMwFxxlSlsEFqRjL3QZbvTUAg0jISQ4Yk8W3SQpD8n7mbp7TaTpHIELV7jUWGqXu4mFzPaGJl9uC2m6W04aCDcaqU6jtEpQSpnb8NliEVYBCwez94GvLWg3JhbOm/yhMpJ9FotNaPcR0VN+JVt2ioVaEnVMMwnhn5gFbAVGgzKArNOrZYxSx9SEMr4iRZXtp3Qh7oBRAwRtSqW3lDxiX6qxjKuex0lNqwAuaVXok9s5fvftSo8+HAa2TIHGOZWdZTWj3mwpdUMA2KrbN2a46grojJKOyXLQ3YGwX4l+UGGj2nRPp1Wx/shTa2CSQbSTBHI2VjYLf5ZpfoIkhDqhxu1XltNpo0GnqMx4EnU9kn4lu10WxR5LrZkNrZKVRzGvDgDqLj4IdmYTdy6V/1SvDbPk9jCF4r+GOJM5KRtxgweyp+YsZeHX8nn8P6YFdvEQTPouibbqDwH9iuc7L3c2ngKocMLUqsNnBjS4gcxGhW8r0KtWjajVvwNNwI4wQQuaSbnfoWXwxaZjtmUFp6VIQFTo7LqNP8AdvGn3HfoizcK8R5Hf6T+i630c0VsjDYWN3lHmHdbd9J0Hyu9CsbvBSJcLHXkUsui+P5kUcE3zDutGDYIHhKRBFkZmwVvD+ZnJ/Vn8CD27epQf+IAux3Io1u2NUI/iA3My2qOb5yfi/2UYrbFVryCNQApsBtKm1uUgNdwT9h7N8uZ6o4rCB9bKOd1MtvsL1MH43mZY8wg+9Wy3w10SYvC0Gz6TsO4NN2n4I3iGNc24lCxlGzlW7mI8PENJsNCun4igwtDmGCVzKrQ/wC1PDRoSj+ztpuZAN2gz2VFic4XHsm8yhkqXTDTqlQGI0STnbQa640KS5byL0O1QxPfJmCr0hAPFO2Xiix/EAroWzNymNu+6lG7lI1oiyr+HrZGUkyLduuQ4VJuOBXT8FtgOaFybeysMO5jaepsQiOxNsEZQ62i53GUGwqHHcejplXaTdEv5vuh2zy0wdZReoxsSqRYSR+PGWVRobVuZNk6pQkIe3BAA90ZKimJ3dhjCY1r3xZ1tDorFbEtkgMZb+kLN7DqgVyOU/KUZqtkk8/r8lkItlzCvB1a0TpDR+ishwIggQbaBVKNIwOCsQS0xrBjvFkQkbgCCA8TxsJmCCbcdPRQZ5BDiATI4Hi6DHYj0Vlx8oDY4eWJI902hVXjssYVR5EEOESOAi7wTfsDZPzAgNz2vpEkZSNed5TJGUfumFh+i79FgFhzyBAc6SQZknSOGnD4qJlVrRAJOs6z6jsmUmme3U/moHtuSBz9/BYw9mSSXOLj17NHAdB8UmZLEEmPTTLy5KBgvqVOHWInl7ljE7KjRz152uSfmSrIxwVMR0SaBy6LGL5xIMGCmVMQNBqq73WCb4oFr3RMX8LUGhHyPALCb5bBZQy1KZOV7nAtP3SfMMsDTX0C2tB4nVZrf5002dKserCVXA2po5fMinhdgrdwWKob1tkFEd3NCh+9Z8rkc3zsXxl+ijD/APSZy5G63/3Sp4Qtit6q7sbZQcC/mVfbRkFqRlUhVqgqUpHRWMPU+zk8lXdQyMDRxUuOPh0CeTUkrrRWFX8Rlright16AqYuq4iwKdtZtNtYMafaRXdDBOGHqVAPM8khY+hh6jsXDwc037IeP5DWSVMbyfGTxR5LZpiKbbToktngtm0PDbmDZi/vukqPNh9WIsPkVpF/G14MDkszQrPbUc4zfSSiAquJE+9XamEbkLrJ30TXZnhsbx6ofUM/l0Cq744ZmHDXMMEIzsTFirUc1p9lY7+JDntqhpNlxq3Kmd7aUNB7cze99R2TiOB/VdCxG03ZdFwncutkxlLk4x34j5L6HoYcOYLJ3GujjXsSUKvkB6KtTY58gK8/DQyFb2TSESnexo2jKYfAPp4gPJs5wHabLT+HncOQ/JVtuw0TyIPxVqvjvCDQGA5p6aR0SxXsZaLTyAvL5SqA2iTULcrY4GbzrEdp9Fbo1C4EfXfsi1QydjH6aqOFbyQOJUGW/H3wsGxuSW9ffz6Jjqf1f9VaDbQvAwcgsAipNj6/dU3D2tdSiBYJ0CH1RrbUrGIaYudVLTNvrmm0W85+v91M0i8cv0vosY8DTHBMNuCc91uCYSevqef7LBJIho1/RRP4aqZx8oP1xTRB48kQDKFN5cCXQORHRZ/fSofDaP8Aik+lOPzWkfUlwFvoFZPfR/8AdDrVPxaAq4FeRHN5rrBL/H+x27Q8qHb0U8wcOhRPdr2FX2kyXELZfnYPHX6KMXu3jMoLDwKIHENAJlU8VszK8kcU0bPdaTqUHVDqy7gZqOk6BDd98blYKY1dZaWjTbTp9gsZgqbcZjy1xs246mUj6HS2kaTc2q5uHyvEZQgTsXTftAllyW5RHOVot5KwwlI21ELn+5eKa3H0nv0LyOxdp8V52DC5uUno9Xyc6xqMY7Oi0tnVI8xcDe0dbfBJdFbh2kA80lf8sc/5k5tX3hohkgiY4arPYveSo5pa0ATxWVFc0yGlF6UFsr2YQiz57Llmqbegp/DSuRiXtPG6rfxYd9u3smbubTbhqxe7QqvvxtBldwcDNpXn5I8cp6+CfPAAdgt+3pEmIeD6FfSGzMc3IPMNOYXzXhjBsuhboY/MA03hE3GtnX6mJDxAKsYapkFys7szEMpi/FXK212GwMpJOkNGm9kW38aHAgFEdqAup0i36kNWX2o8kFa/ZTycPQP9DZ1PADmEI36mlV6BuDa/IPEiZmLeUZh0trpeL81c2VOaraOszzOnCJ0RUNte/wAPgSvXae5MDVFbP1soSvTUTmAHUj0WCeBxDRHXovRUOn5pVIjgb9lEagHBYw8uPX1VeubnXVePxE6D4DT0TasZtT16dljHgf1TqZ17H8kgR19f2+oTmgQbcOf7ImIRPIXTovxsvQOikDOsdyP1WMeVH+UcPXqo2snX66Kd4ho07+qbw0WAV6Z84tz+X+6ye+T/ALWmCdGu+NR36LW4ZgzdeKwm+ZJxQAOlNvqXPd+ar4+p2cnnbw19UHN33AU5VHGYoZiptj2pa8EBxzvMYSTb5Mpj1BIe4Z3SpaoFkOpYuLWTcXi8ozLXoeKt0e7y40imWMEuI0CwmzMFimVG1mU3Zgc3ccQVrsHjWiu2pU9gtIvoFo6G3MOXZRl09IWQZR2Zjfzbni4Wm17C15ixGnO6ydDYGJgPay1nB026e9aHeem/EkBrMoDjfn7uCO4PHmhgzSeAajR5ba8iVrQOE2bzY+0XGhTziHZRmHI8UliMNv8A0gxoc0hwAnynXjwSQtDVL2Oa4x/i1QGhaCphzTYAdVc2Du9FbOBLeCMbb2W8wQ22i6seePJ2zzs/jT4LinoxOLIy9UCeTN1scXuxWPL1VGruvU4lqTLOMumW8eE4dpgNhstduCftEIp7uVJ1CN7u4F+Gq5z5hyC5m0jvqze7Ye8MlhuR6LM4DGVWPhxMEm6N43eJuX+6cVncXtpznQ2iBHOUvNCuDNBj9rMpsJc4SdG8T+y2u6WP8TB0DpmDr6xD3Dj2XI6OAq4uo2mA3M4wALe8nkBf3LsG6WxH4bDNoPLXFrnEFsxDjMXHOUOWwRhO7a0GHPyi7rdgqhxmabhCtvPJrMYDNjAHfl7io8I115ECQPlZMFov+Npofrh6plSt2n6hDAPmNPyPFPHv4X+uyJi74pI0tPwj4qIVBxn91G0S0wdDf0uOvFS0W8z9eo+SxhUoNy4i3f6/dT1jBPu10UI43+H7r3FSDp+umvyWCStqcLKRpidNDET+lkNa3lb6/wB1PSd7XCxWNZYDh17fqpAeqqsd1m6laZ4BYxZI8o+rXTHjonk+USOOnqm8NVgDaUC/T6suZ7erF2KqHkWj0a1dJxJhp7RPuWRq7KY5z3HUklaOdYnbQmfxZeRDjF1uxuzR9mh2NoAglNxGBLTDXuAPBV/5G8FzvVSfkxsuvEmklYNNEyUypQefK4eqMs2cJFio8ZTAcJBPKyH5hPSRSHjcdtgXaGH8obYpVdn5A0sInijFTDgi4hPbstjmkiQeB6pXnRVYqdjKTCWAW56JhoGpUM8BGiuU2nQRITf5VzSXKziRU6syOJwDQ92mq9Revs8ucTzSXO4ys9KPkQpbHbOxNQEZTlnoj2RxDZegmwqRqSXWAEwjIpmNOCMmrOCCdETRMwZ4GFDXpACYUedzeET8ym4jEFvtFZBfRVeOITS8wnv0lVar7aqyimQcmiR9Z0C6rOwznEulPfVbYSj26tAVcRSZlzCZLYtAEyekxKWVIaKbfYa3C2S4Un1wPM7yM6AQXH3mB7ij/wD0pjKbiH4Z5pgT4gLD7sgcXe+FoHscAMrQegICpVq9UHz0y1guSIcLf5SYU5Ld7OiD1VIEN2zQqAPLgHAw2YBE2i97q+0ggQs5vbg6L2+PTcGuBBOU2qA66fejiiexKxcyC64A46jmq4ujnzvfR6WGdOPf60Tiw8AdOXOxTnTm9f2SdP11KrRAcxsNuIvx7RxXrAPo8NE6mLHuPfqvGoGE0i/T9OqWMPm14cdNAfrukwgzA/ROxWvePlx9x+ayMVmOJjjCkpmJto0/XwTKY5fX1Kew62m35hExGIspKToOv0dPzSYCBrHSQPzTc5/F/wC74LGLvieVt+PfmpqPm+roRia5AaOPP61VihtyjQpF1R0PvI+Uc5HJLJ0UhHk6C9fZxItA7/sshj8FVokh4sTZwuL3joe6LYDa+KxYc6iwU6Y0qVJGb/K0CT3t70qWAxWb7Use1x8wDpbHZwBHuXLkfL0Z2Y4KK7Rksax8AjRPw2CcblFdqYTw3OYAYBsDyN9eKVIEAqXQ9lCtSDYkwq1a/VXKtOSS4TeyqsqAGIWMU67DfUHh0T6bcogT71arOkFQFsIDFfBiHl50OiftHFZXsHByi8WKYaBoU3FOFRwj7old160cdW7kWQCkrGzxNNpidfgSEk9nPTAWDwDqLXG8c15T2qcxIkgNgLM43fSq+wp5WfhnXuqjN5nDSkFF42yyypaDNbaVZxIggTyUj67iPMZMoL/at8EeE1aHY2BdiKHi52tJEwnjD6CSn9SCu4wCCo6jzGq92VTfWqupOe1uUxI4/BaQbrNPtVSfcP0T8WJyRnaTtLLW7hYkjGsaIhzXg9sub5tChp7tUx/iO9U7DbJbRqtrMc7MwzqYPMa8ksoNjRypHWntJ0cB3E/mhm2DUbTMPB4QBDj2k6qLFY8NYAwnP+EjTvKzOExWMxGIdTy0xTYfNUIcYHDLeHOPK0RJ1EyrlpHRfFWyltagD5qJ8v32HSfvQPuO1tz4IxsYBoaQeAHDRHcLsai05sgLjALnAEmPrgrDsG38I9ArQhxOfLkUmUXYbUz8F43DH8Xw/dWKtB3B0f8ApzfmEOxniM/7zSaP6qbh8cxT0yVovNwtj5tenJNGHP4r9kJO0qkQK+GPWXgp1PGVT/iUTyhw+OYhbizc4+4Wp4fr8E6vh5Db/BDqWLrixyx0NN3/AMwvcVjquUAAzx8g+BDyEKYbRd/lG8z8E04Ro4nRCPHxB0zD3Ux85ThTxTvxnsWD5BENoI1KLQoC5ugH5qs7ZWKd913vqfuozsOtIBY2XaebMgEthrTrFvdCnqbPoua178uUX7xaJVR2772mHBhPFrbu9E/aez21C2kXZWUwPEGhvJtyzfKVOafEriceVMNszVaQNNwpt+75ZkcCBIgJlDBvBANUEdjPzSoUvEEufkbHly6kcDyAVmjhgCPtHEciBPqo1Z03Sr9v3Am+VUsayWZgSQHDUGNPf+SzjMdb2XLU72OtTAdaTb3CD8/VAC26osSlshLK4ukA8Rvjg2kh1QBwsQReQhtTfXBgmHSJmYQutumK1arUc6Je60Jp3GAgyleOCMsuRroIP35wn9Udik7fzBxo/wD0lV8RuTTDR5r9lSfuUzKTmMpeOMfnk+hoH7XpxpAcJvrdPwTmwSLysrtDFNcWsNiyBy0stVs9rfDAHJdX4dJHEs7k2jU7BojwGW/F/wA7kkX3eoD+Xp9p9SSvEtFeTOSnYLS0kMQqvsRwFqZ9FsIdRcWuENLjBB4SjWduUEFTSa9R3T1Ry07Kf/4bvRHN02VW0ixzHN11BC1tTEZVFWxpPFMpSQsoRfqAcLsgsql4sStFSmNVQFQk+Yqb+Ya3in5MTgn6l2DzRbdjZwrVZddjLnkTwb+fuWTpbRY52UG5Ngun7FpeAfBA8ppyHc3g/aT1uD27Jk2xXGK9SjtjDv8AGGQTm1/pJOsciL9w7oi2CwzWNgcPUniT1UeOAzAkeYaHoeqsUTa6EYpbDKbeiVqeAo2p4MJhROYqtfDB3PuNVY8ReEhYAOqvrAgMp03nm45fkDKmpHEccPS9z/8A8qwVQxlEtBcHVzxysfJHZp17I6Bv3L32nHCt9zm/mF4XP/8AJj1Ys+zbAmPExYPItg+jmqw3G1Do/F/6G/8A1Rqvtgu/tBZ1V3HB/Gn+qhfVZ97BOHZrD8iheL2i+m3M6riWtGpdSaQO8NUNLbjiA4YsQdC+lAPvkLV97Be6/wCF7EVcLxbVpe6o0fCyg2Tj2+Nkp4guaQZzGS0DUgm8rzFY7FFvkNCr2zN/VZZ+1q7cTSbVZTDC+5a4kxyggTeEfvs11/B0yk85ZZlpU/xuu53W+ncrO7a2Y17jVbVcc4NMng7MGgXFpBiOj3I0XNkF7TUqG7aQuGDgTNh/mPuVLEmoC+wgnz05lpm4g2vyPBTlG1RWEuMrMrtnBY91TJSqiixoABbc2AgDgBZFcNi3UKJFavmqQcsxJPABogzPcKPbm0HERSeWHQse0GOodIWewOBe+p4lV85bgfKeQ6LlcGjvWWLCFGpIzVHFzze50/pCbVxMCwN0G8ctJB4Ej0VmntONdFGpIo3F7Y6niwy2U3vMK23EPcJDInRUqu16fFKjtRrY4z8Ai4v2F5R9yw+u8asSa5tQ3blPG2q9qbZZxFlFiNpU3OBbm00GndLxYeSMXvLssmuXCCCQLdFoaHlYB0UeLqZy6ODvyWh2Puw+pDqpysiQBqe/JehGXwI8tw/Uk/c2WwqEYekP6B8klLSloDRoBASS2Wo4/j8WXi5iE/D7TlsTZY/F7yte0+Ugnoq2F29kGh7I8dC83ZuDiROa/qlVxVoiVjmbxNtINtVosDRfWYKjR5XiRdGkDky4MQY9lQvoufeFZbsut09U9uzK/MBagWQ4bD/a0nfhc3/mErrNSu9tUWBpniPapvgi44tcDHQ97csrbKqk2IBF55rf1saHNa8GHAD4iHNI0I6H4GE0QS+gUxWIDwCDMDXmn0sWHHKDcNa6P8yz+EqwxxFpqGeFobJ4GZc3UA/NJhlzDmgskD+pp1brrxHboqKOiTns0VDEXVh1RZnAYx3j5D7Lhz0I6evFFcDixUbMRBIg62NkrjQ0ZWX5lIOTWlIoDEocvRdMYV6HLAG1KE8+4cWn4KB1Fw0qV/c9p+D1dC8KNmoqBoIh5e//AD0w7/lUX8q3KWUnUm/05Swf6dPgrdSi0+00Hrof9Quoa2CkeR8/0VfMPc/UIBMftTYjqZc9zHMn79KcvvDL/BYfF1msqMqFoe1j2u8Zj3FwhwJkFdIx2LfTOVz6mGcdC4eNQPY6j1Cy+2MA91RtSpSY4O/xqBljx/xG6j4jqmbaQlJs6bsaoHAvFmmCXn75idfwgQFC0CoHuB9p0jqOCG7uYlow0W+zBOUcQ32JHASR6IfRrvoz5s9NxmB7dM6ugauZJ7t7aJVj3QRxVJrrPaCRzQ+pl9lsADWFRxe8NEyBWa4jgCHO7Q2ShWLxpq/ZwWtJEtB874uA8D+7p6TJBdpF1OafRbG12Dsf4niOJaZJmBwzXHwITMbhS9oDS4OHBXBj2ue8l41jXlZSfzdEXNVvqp8N2UeS1TMni9oU6RyVSWuiYXtTejDnLBIyiLN+JXuN2IzGYp5a+Whogi4njde0tzaQkEulBuK7BFSfSIXbz4e85nHnFlB/aumPZa7REhuZSAc45iBC9ZujQOmb11KHKA3HIWt36/iNz8HkRz1grrlAWEcguQbHwppNa0SA1/H/ADLqOF2rTL20swzubmDeJAiT8VdbOd6LxrP6JL0r1Gg2z59bsMXGVVTsnmETc2sDyurrqAIBMyljZp0vQAHYbjoOE/stNsDeGjRoU6b2vD2iDDDrPNVTSC8qNhPXuSv2Dzd66J0ZU/0lIb10zpTefcs9Vqjgbqm0wR5r3WoKa9TUu3sGgovKezesi3gPjuAfcso6o4cVJh6znR81jd+p1Dd7FeLhmvDS37R9jExDQRboltalDTHLt1EGbEH5KHcZ04Yg/dqu+LWGUSxuhB058laD0QmtmQZtWsx+Yvzcc1pEcDa/dabYePaXOc02ecxb+FxAzCOU/NZja+AMyBF+HzHRDsNUr0XBzL8wePSVRq0RUnFnX8NWn3qwHLEbF3iDoDgWn8J1nmOa0uHxoP3p+uKi40dUZpl9xheeIoTWTc3JBBbLjKkKUOQ4VeqsUagPFGjJloOCa5w7JM7p+UIBKuKw4e3LI6dDzHJc/wB88c/A0XVPBhxOUloPhPmwe7g131ddINMcVUxVNoEOPlOoIkHvzWo1nAd0t9amGqu8Ul9Kq0NfzaAZDm+ui6I/EU6rGvGV41a7rzaQQQexnuot6/4fYTEAuw2WhX4AWpvOsOZ909R8UB3O3I2nlOYtpUpIyVJcTGrmhug6zdZWgafRexGIcZEu6jPXd6gU2n1cq9fGihRfUnQHK0NaxuY2ENbOp4kk9UQ29urWw9F9ZpbVbTaXOAGV0ASYkmfVcv2jtd9cjNZouGj5k8SpzRaDpGjwu71KowO85m5OY3J1VobpYWNHk8pKs7pZH0BJNjCPtwTNZK5JZGnVnZDDFq6A+y6YwwilSgdT80QbiKroeWNaDp1HTopn0Gcz6pVqTIu51hzSOdjrHRBV2i8CDljlCe3GkQQAqGLpUyfacNOqfXaz8ToWYUe+Maj3dpU+7NB1TH062jadNwd74gKrsWkPHc0/gPzR/ct484F4n4E8V1Yejhz7kbSEkEwm2A9gcHGDI9k8CQfiCvFQQxe0MOCwEE3NhwWdq4wtlpEkJJJMY+bsiZip4J5xnCOCSSqc4HrYnzW4lSAfBJJFAZI6qBGsKSnWg2skksZG7/hxjy41aXMB49xyu+bfRaatqUklSAkga+nJiAWnh84PBDquDyuIBkC/UD80klVHPJGright1rWNQ5KdgLl3GenJSYTeSph3BlQl4t5h7Q5SPvfWqSSakyak09GuwG8Qe0OFwdNfkUUo7Ta7p6r1JRaOlSZdp4hWA9JJAoey7mvAKh0evUkDDv5d5+9fmnNwrx/iO+u68SWsNFfHhgc1mRr3uP3h6mUZcA1sCwFl4khL0DDtmT31NQNYyn97M594Aa0a9YJbZcQrtpNZkDT5dHCMx/FM879rJJLSiuKZlJ8mg3sCsaVmuD6dRuZroI7gg8Rp1R8Yt5C9SXJkirO7FJ8SPxnQb3SFd0aykkkoe2NzwJgKRzriQNEkkjHRZ2MR412wcrvkr+4F3v5AH5pJK+HpnLn+ZGywOEYxgaAIv8SSfiUkklUmf//Z");
+		imgleft1.style.width="130px";
+		imgleft1.style.height="130px"
+		var pleft1=document.createElement("p");
+		pleft1.innerHTML="Newspapers are one of the most important documents. They can be said to be the powerhouse of information. Moreover, they offer us other benefits as well which helps us in our lives.";
+        pleft1.style.width="40%";
+		headleft1.setAttribute("style","font-size:14px;border:2px solid #E7E8EE");
+
+		var headright1 = document.createElement("h3");
+		headright1.setAttribute("style","font-size:14px;border:2px solid #E7E8EE;margin-left:45px;");
+		headright1.innerHTML="THE TALLEST STATUE IN THE WORLD";
+		headright1.style.position="absolute";
+		headright1.style.width="50%";
+		headright1.style.right="10px";
+		righttwo.setAttribute("style","margin-left:15%");
+		var imgright1=document.createElement("img");
+		imgright1.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgl5hUWKpRwPjujqAVamh3FaIDAs7O5-pk2I3Nt98DAM254mjV&usqp=CAU");
+		imgright1.style.width="130px";
+		imgright1.style.height="130px"
+		
+		leftside.appendChild(leftone);
+		leftside.appendChild(lefttwo);
+		leftone.appendChild(imgleft1);
+		lefttwo.appendChild(headleft1);
+		lefttwo.appendChild(pleft1);
+		
+		var pright1=document.createElement("p");
+		pright1.innerHTML="Newspapers are one of the most important documents. They can be said to be the powerhouse of information. Moreover, they offer us other benefits as well which helps us in our lives.";
+		pright1.style.width="40%";
+		headright1.setAttribute("style","font-size:14px;border:2px solid #E7E8EE");
+		
+		rightone.appendChild(imgright1);
+		righttwo.appendChild(headright1);
+		righttwo.appendChild(pright1);
+		leftside.appendChild(rightone);
+		leftside.appendChild(righttwo);
+		leftside.appendChild(line3);
+
+		var head=document.createElement("h3");
+		head.innerHTML="TEN BOOKS TO CHECK OUT THIS AUTUMN";
+		var divl=document.createElement("div");
+		var divr=document.createElement("div");
+		leftside.appendChild(head);
+		divl.style.position="absolute";
+		divl.style.width="30%";
+		divl.style.height="flex";
+		divl.style.left="10px";
+		divr.style.position="absolute";
+		divr.style.width="70%";
+		divr.style.height="flex";
+		divr.style.left="10px";
+	
+		var img2=document.createElement("img");
+		img2.setAttribute("src","data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTEhMWFhUWGRcYFxcYFRcdGBcaFRcWFxcYHRgaHSggGB0lHRcVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0lICUtLS0tLS0tLS0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKy0tLS0tLS0tLS0tLf/AABEIAKIBNwMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAgMEBQYHAQj/xABBEAABAwIEAwUFBgUCBgMBAAABAgMRAAQFEiExBkFREyJhcYEyQpGx8AdSYqHB0RQjM3LhgpI0Q6KywvEkU3MV/8QAGAEAAwEBAAAAAAAAAAAAAAAAAQIDAAT/xAAiEQACAgIDAQADAQEAAAAAAAAAAQIRAzESIUFRE2FxIjL/2gAMAwEAAhEDEQA/ANSzV0Ciijg04odNKJpMUcVjB6FcFGFAwKFdFAisY5XCa7XIrBCE0caamml/iTTKSpagAOZNZhxV9oxVKLfyzn9KlPKlopDG5Fv4u40atkkAyrkBWXN/aLdhZMggnQdKrV5cqWSpZJJ5mmRTrUO5dsvxUejTcP8AtRWP6iPhVnsPtEtVxKoPjWGiaMFVu1pjcIs9G22PMOCUrB9aeofQdlV5rafUPZUR5GpWx4kuW/ZcMdDrR/JJCvCvD0F5Udtuaxqw+0R5PtpCvKrHh/2mNHRcp8xpRWX6I8LRpQApNbINVuw4yt3NnE/GpljFEK2UKZTQjg0O2mIoXDoAoJuUnnXFtpVWbAQ1yoqVAGnOlQI5U4/hFBUjUUa9Y0maSh7I5bAPlRBbSactLGaKURudKFBsZGNuQrkEaJ3P5U4ctp1rtokAxvQaNY0CFDSN6RumVDaanXAeQpNRGXWtxNyKh2GZeo/elUYbCpVoOlPnLhtCiedMbm+Lpj2QPzqTSRTsOjCS6YmEj86duW/ZQlAolhen2UbDnRlXIK45/Km6B2Om8x3rjjYFJl0k76UZIT6UQCNk6So66ChS7NrJOVJ/ShTJMDZYCmgBXQaPFdxyhRRwa5loRWMKA0YUmDRgaBg4rs0WaK66EjMazdBA++lCcyqzHjD7QFhRQxGnOucc8VlZLLRkkxp8qzS9UpKilYIUDqDuK455HN0tHVjxpdsXv8WfeMuuKV4cvhTFRrmainWlSLBYmpHC8IW8YSKRsrUrUEjc1rXC2CJaQNNTvRXbpCSfFGdr4ZeT7tM3cIWndJ+Fbn/BjpTS5wxB3SKzxvxgWVeow5VlSSrUitcueF21cqirrhEcqm+SKKUWZqWlDlSap6Vd7rhdY2FRb+CrG4rfk+jVeiupVT22xV5HsOKHrSzuGkbimyrOjyizUyds+NrpG6grzFT9j9pJH9RBHkZrPlMKFEKT0o/wVxXw2aw+0Fhe6489KnrfiBlwaKB8iK88zSrbyk+yojyNG5IR40eikvNnUECg6FkGI+NYPa8R3SNnSfA61M2XHr6PaSD5GKPL9A/EzUX23AkyTSuG3acuu9Uez+0lPvhQ8xNTNlxjbOc0z6A0OSF4Msr10T4VEXZK9MxoxuGHRosg+dccw8qENuA+Z1pXbMkkR6rZtJBoXN02RlTUxZ4NpC9B1GpPlSd4zaWykJIK1rJgE7AAmT8KKxvZnNaInDrd0JJbToefL4mpK2wF4iVlKSfGi8OYgu5ecUR/KaMJ0gTy0G8D51N3bpW6GwdEwpcdOSfX5CnjijQrmxhcYMAkALM6a8j5CniEtsDJ7SgJJjrSGJXzaMzxk9nIHMaRJA8NvjVOvuIzlzjNncGZSiBEe6gA8gKdqMQdsWxjiVedyFHKF5ZBn2RsE8tSaFVFNwAxJI7ylKgwCZURPzoVNtj0jbxSgNEFKJruOQODQrlAVjAiug12uaASdqzMGUsASaz7jriYpBbQe8rQeFOuMuKw0ClJ15VGcEcNqeWLu5BM6oSef4iOnQVyzk5vjE6IR4LkxzwDwkUxc3Alw6oSfdn3j41R/tEwxTVytSt3FFQ8q17iXH27RoqUdfdHMmsFx3FnLl1TizJJ+A6ChJJVFDwcm+TI4U4aRXGW6mcFwsuLAFSciyXpYuCMEk9ooeVaTbMwKZ4HhpSkJSNqs1rh0ar+FdGOFI5ZztjNi2UswNutSLWHoA1EmnSUgaCuxVVEk5DN3C2zyjyqPuMFV7pB86nc1DNQcEzKTRTrqwUn2k1GvWSDyrQjrTC7wptfKD1FSlh+FI5DOrnCUHkKirnh9PKr5fYKpGo7w8N/hUUWa5pY6LxyFDuMA8Kj3sFUOVaOtmkHLQdKnxaKfkMxew0jcU0XZVpr1gk8qYPYQk8q3KSGtMztVuaTLaqvNxgI5Coy4wUimWQNLwq80BUu7YHpTright1xPSmU0DixBi+cR7K1D1qfwPiO5U623M51JTtrqdTVeVamrP8AZ1hJXc9sogIZ1PipYKUgfnTJJsWTpGu3N823lSVQYMa6mBVbRcJSp+5e17OUIHIaAz5mRTRd6pVwVnWG1FIEaSsD02qM4kWs2+477usHwCY8aq5HMol6wa5byIQgbjOrSNYCj56molnH4aedAM9ouCdoT3Z8dqRuboNWiliZDcDwzf4FV1ai3aNoMFSsoIMxKiCfmazkZRBxDiZFv2ehzJTrqCc5BUfHn8aqWIPKJkKJGw8Cd6dYzcZnTMiOX9ogfnUeV6gDrNIUoVNzJSOSRAB2AAoVcuFuEhlFxdoMHRpkSCuRqogajSYHhQpuLFckanRxSYo4rsOUPXJos0R54JBUowBWswsk8zsKqPGPFCWhlSZVyFI8Q8VZUmNuQqocMYQq/uFKcJ7NMFfjOyB561yZMrm+MTphjpcpD/hDh9d67/E3A/lA90H/AJhH/iPzrRMZxRu1aK1EAAaDr0Arty+1atSYSlI9ABsBWJcZ8TLu3DqQgeyP186P/CpbMk8jt6GfE+PuXbpWo6e6OQFI2OELWntCITy8af8ACPDa7lwEpJQDrHPwFbBZ8GBQSHe6gbITv6nlSKLa6KOaiZHZ4KtxQQ2grV0SJ/8AValwdwQWQFv6KPujl5mrnh+HNMpytISgeA38zzp3FUhgrtkZ53LpCTDSUiEiBSsUK5XQQBXJrk0UqrGDFVUo8foLzyUNEtNKy58wzOFJV2uRG6gmDHXKdpEznE96WrV5aDCssJPRSyEJPoVA1Q1cIKJCm3UtNtphBIJVmGijPSJ13pXZi4WXHGHuzku2tOSlZT8FRUuxiTa9UOIWDqMqgfkawnEeEGTdPIW8UgALbUhAUlQUSDImRB00/UVD3PDKUKlh9RPXsygz5hVK50FI9Jqcqq8YXCGUtriCt1tuREfzFRrWM2zmJtHK3cOjw7RUecGRSmL4riimYuHCttCkr1CZBSZSZAB3ikckxkmjWXUFJg70iuqNZ8VYm4sAstuFQ/tEHmTMAVKtY9e5c6sNeKQSMyDI06aajx2qDi/C6kvSfUKSLU1Bni/rZXQP/wCdcTxI8r+nYPn+7Kn50nEfkTK2yKYXQB0io967xRfsW7LQ6rXmP5VGXGDYo4QV3CBGwSYA9Ep+db8a+mU38J0WCSZNIv4UDypXBbZ9AIuHg4dIhMR1151JZByNScUVUmVe4wUcqn8HsQ1bNNzC33s501KW9f8Ax/OnCbbMQAJJMVL2VoHrvNA7O3RkCvvLVBI9BHxquGLsTLPqhkzhq0FbygDoEpE7QSoqV4CfyqPvLXtlMpWoKCEqdcyiASdhPiSPhUhxxelOVsGEmc0HUAb7df1qHsrtRame89oCNgkKgD4mrOk6Iq6sHEC1Lt22jAU8s7bJSnTTySk1FLdU+4iBDbaVqHiUwAonmTmFOsdcSXlBIhLKA2BvqqQT4GAfjTQo7O2KtQpz+WgDUkJ5eqjH+mlb7GRWnTmWtROk9Znw/Or1wVwkITc3SYJI7JtQ5DXtFDpuY8Kf8HcJtMDtrrKXEgKymMrc6gq/FzjlVlfKnG1LSoArEJURIShR3jqrSBudOtPGPrFlLxEFcYm6/dEsJzIaBTsrVSo+ECfjQqXW4zYMBIEqJ23UtRMqUQBvuYG1dpv6xb+InK7NEBrtdBENNVriy/gZAfOpy8uA2gqPpWXcVYrE695VQzzpUi2GFuyAxm9zrIGwrQvsteSiydc0kOHNrqAEiP1rKEZlKCUgqUowEpBKiTyAGprRuD/s1vFSq4dVbNqjM2ky4sdD7qPzPlUMcWn0XyuNU2QnFOPv4i92FshawD3UJEk/iPQeJ0qa4a+yB1ULvXAgb9k2ZUfBS9h6T51qmC4Hb2jfZ27aUDmR7Sj1Uo6qPnUjXRHF7I55ZfIjHC8KZt0BDLYSkaab+p509rtcmq0SARXJrhVRFL60QBiqildJrVzFN1O0DDlbgpF12OdNVvfX186aP3PpH19DY0HINCHEjZdt3WwdSkx/cO8n8wKh8Mvw+2FGAFAEj7qo749FSKeXN6I0InlroR9fCqVYrWy+tIJKFqKgOYJ108R05jxFT5eB4hONbFTTJebMLaMpV+FRCVJPUEGY6pFE4eeaumQ5oCO6scwofoQQR0mlOP8AEf8A4S0zq4pCR/uCj+ST8ajPsuwl9xDqkpORRSAo6JlGbMfH2gNOlTauI62WC4QgCk3+Hn7hh0BGVJQqJGpgSIHpV4wrhxCIUrvr6nl5DlUyIH7UY4vWB5PhT/s3wm3VZW75GZS20kzqJGh/MVexEQNqpPActNLtj/yXXQCPurUXE6eSo9Kt6Z9KskkJbGeKYK26DHcVyUn9Rsaz/F+HsQaJOcLR95A+Y3Faghc0epzxKRSGRxMUm4GmfWiuOXPX4VrWIYEy6ZKQFfeTofUbGq7fcOOI2TnT1Tv/ALa5Z4ZI6I5YsqFgl0mVqPkamEIFG/h4rmQ1PRS7JLAbMrczTojX1O1OeIcabsmxCCqSSYjnqSSakbRkNNJTzMqV1MCY+QrLeKrtTjyhJImSJ2E7H1+VdS/xE5/+pDHFcYcdUpw6FeiR91Pj571KcNIVnaBUSluVxGwiB8VGarbKdc5BI5JAHLrNXbCWoKEwCpzvOGdG0JBMHwG3maVbHeg6sOIbUqe/cKzBAiSIhGvLr61YLDAkt9kCkKWhIyyCQkj2nD1MnTx15U7wxjOrtynQaNg+oKh0H6UijEklbkqhsK7y5jtVgewmNcqQBIG8x1qqikSbJT+BbUO+AUp1g6yfvGdCagncULjvaIgNIzJQDpnXOVTk8gIIHrG1H4oxNSW0NNA9q+QI0kI3UTOgAT6a1WsSuVLKbdvLnUYGujaUjc9YGunPStJmSCvYn/NddzQlBCG9DlBOriidJOseGvqKZ4na9qpFqwrRIKlKjXzPUkz8TXaTsfo1QChFcQqo3HcRDaYG5rplJRVshFW6ITirFQAde6PzrJcRvC65JMSYHhPOpbivF8ysgPnVXCVLVlSJJriX+nyZ2JKKo3Hhu5wzDEJOVzM4P+JUgHtR1SQSUo6AD471csN4ks39GrhtRPLNCvgYNVfhLhsBpBunv4heVIhRTlQkCAlKRpAHPelccwzDkAlVu1PgmP8AtirJyXyjnai/tl4IouasoY4odtz/ACCS2P8AlrUpSY8MxzJ9FRVw4f40t7khBPZOn3FH2j+FWyvLeqRyxYksbRZs9EK+tJrVSCn43+vKqWILqVzGtILfjfX65ftvTZx+NQZB+vUVH3t8BJ0BjWT4wJ6A8jSuRqJBd1E6wdx9c/mKY3V6nyOk68zsZ5TyVUXc4hHvASY312n0UPzFRbuJSCkEBYEiRooGDz907HpU3MKiS9xindkAmCZ66b6decc6iLi6MZkqB5pHIg+7PTmOlMGrhWpIiTOvteR6kbT0pLMAOg1/M1JzKKItdv5o021HhUctlTisqElaj7qd/Pw86seE8NPPQpctN9SO+ryB9keJ18KuljhTTCMraABzO5PiTuaMMbl2BySMS47t32jbi8JcZUoSEhIWjKQVIKwBmUpMwo/dPiS5scXeu7hAaQ42wgQxbszlQmCEqWE6KJ/F3QNNa07ibA0XLDjS0yFggeCt0qHQgwZHwqs/ZUvJZlKtFhwhY55kpSk+cZY9KvVE7JbhnEHWrhdjck5iO0YJJPdI7zeYySAQSNTAka5athPWq3xdaKcaTcMiX7c9o3Hvp/5jU/iA06KCTUjgGMtXjCXmlBQMA9UmAYI5aEH1pgEZghy3l0jqpChr1TG3+nlVnSap1s5lxN0feaQd9yFu9d/nVwB0+vr41jCmn1tRiSKTKvr6/WjBdEwqDXaJp5UAo8qARte4Y077adfvDQ/GoK64YWD/AC1hQ6K0Px2P5VZwar/FXFKLQBCB2lwsdxof9yuifzPylOEdspCUtIUxGUoURopKSBJgCYjasiu3SVrB1JJkjaEnUjnyPxrRsFs3k2qlPrC3XlKcWoTBzaIGw0CAkRpG1Zk+4UvOhOvfKUgc9TpE0mQpAe4RbJLiiqMqCFR10lKflV54awlxEuPI/mOkQjSEIG2b4kx40XhvA02rKXHBneV3gOYKthB97X0qZxG6LKAdC46pKN9BPtR4ASfSjGNbBKV6InjviDsGQ2gyteg6nkNtgSKR4btobbzewhJJJO86qMHaVfrVOxzEf4i+QEplDaoCfBOg/X0q2YtdFi1UEAhbhyIHOIgRHjNa7dmqlQycvQ4XXyCe0Jbb007NPtEa93MrmelI2VkGWXLgICXHDkbEDNlnkOpJj0FS/wD/ADyhpliAFQlsFPuzufyqNxrGmk3TaEgKSyFEJHIpGVJPqT8KD/Yf4SdnYItmpKyHVnM4vuzJ90ToAOgoVAt4tneU4oZgyBl/EpzuzHgkKHrQrckajQbp0ISVHlWa8Y45lnWSdqtiOMsPd0zk+BSU/Okr7AMMuxKkan3krUFfEHX1oZHz0+jY/wDG0Ya66VEk7mjWlypBzJMcvOtMxH7JknW2uT/a6AfTMmI+BqqYpwLfse0wVpHvNHOPgO9+VGuh+VsZ2zLThmeyX1Hs/uKflV4yJ7RakdUrJHwMj4iq3kW2rmkjcGR6EGpfDMeKDCu747pPmKk4fCnL6STGPE6KDa+oUOzV/uHd/KnhLCxBUWV8kujQ+Sxp8YpNxph4d4BCuSk7GaZvYdcMjuHM39095P8AtO3mKTozLtw5xm6wQzeEqb2Q9uU9Mx95PjuPld3MQBG4I3H6GsStr5BGSOzJ3QrVon8Kjq2fA6eNTWEYstr+SonL7k+7+Hy6U6yNdMnLEn2i83WKLQTpI3JE6jnAGyh051EXN3KiEbbifZ1356pUJ05HpTNV3nAnkZHmKSbRrM6SSB0n2h4idabnZLhQ4dczKUCNDEEeG3qDz6RRTuCd43+dFSolQSkFSjslIkn667VZsH4SKoVcnybB0/1K97yGnnQScn0Z1HZB4fZOvmGUyNis6IHrzPgPyq5YLwy0zC1fzHPvKGif7U+78/GpthhKAEpAAGgAGgo/1FdEMSjslKbYJiiEztpQUZP19fCuH6+udVFE30aERp9fXWqI01/CX7jKv6d3LrZ5ByZcT5ySr/XV+nluPr41XuLsC/imYQcrrZztKmIWNACeYOx5iaDMOmVkH61/f51ROGnP4bHLm2aP8l5BdKeSVd1enKJWsf6gOVWThrGe3bIX3XWpQ8k6FJG5I6af5rKbLjAN4s7fFJW2srRAOvZnKlJE6EwhBg9TShNMuHQMTEmJbUPDuqTvP99XZvb0+t6yGz4qbusRBaCo/mQVaDKUt9djKdjpqPTV7RZjf9v8UVsw4n6+v/VG+vr/ABXCfhzox/KiA6NRXZpvcXaUAlRgdfGo92+S594J5yFJn8pI/Kg2MkObrEkgd0zM8jy59I8agncOtw4p9aUoWsKlcnNBAk6k0lifEFrbSVKBUT7I1Uo8uu1UvEMdLsqJDSDqNczhB5xyPSpSkkVjFlw4h4kZQ1DK0qJEDKqY+B008Krv2fYKlTi753ROYpaCj7Svva+nmfKqtYsKunxbW59s5lrUdSJEk9YBmPCtkUG7ZkACENJ00201Pnuay77YX10hDIgO9o4skoBVEmEgyJ05xMD6FC4o4mL9wA2k5G0nKFCJKgUzHlPxp9jPEKW2ISrvu98+ogDqIH61Ql3ClgmO+4oQfA6D96WUr6QYxJ3g61lxx8j2SQmNyrYJE/WtXhVhnuGwqSGQFxmHtbCfCSo/6aicBwNKS2SVQ13yNkyBpI5mdZ8KfXToCSVLKVP94xoco9hIPIRr5qNZaM9jfGMVIcdUD/RRlkEe25znqE/Os8F+c61/eMCTrA+epNS2K3wDCUp99Slk7mMxCPPQDWqxOUbyeXrS7GSol7e4IaWsq9pYgH8Ok/mqhTG7IKUIGw+jQrGOXloW3FtqHeQpST/pMULe5cbMoUpPkf0rbsb4Rs7lRU42Q4d1oJSo8teR9RWQ49hSrd9xmZCFaE7lJEpPwIqc4uJXHNSHlhxlct7kLHjofiKs+H/aMgwHEqT+YrOlJHPSilNBSa0M4Rfhq93i1jdCHAhc8ykH89xVWxbgm3XKmFFI6TIn1/eqatJ5aeWlLWmMPtaBZjodRRtsXhQq7gl3bnu6p6ToRTnD+ICjurBT1Sr2fQ8qkbbi6RDrc+Kf2pbPaP7EAnkdD/mg39MonHWrd8TsT9b7GmDtotrRUqRyPvJ/x8qUfwbszLZgeG3w2rtviC0wF6pHX99xS8g8X4OrW8AEk+dWTBMEfuTIltv7xHeP9o/U/nVKaxJRd7VCGu6RAOUga7kL35d7QVo2EcedmQi9Z7Po42JSfEpk/wDSTTwSv/RKdvRbsHwRq3TCE6ndR1UfM1JhNJWd426gLaWlaTspJkUqqu6NV0cjv05NEI+vrajSD+9cKI+vqKYBw0QT9fWtH+vr96EfX1+lYwUJ+vrf50Cfr9KMB9fW9A7/AF9GgYpnGXBabuVtrU08RlKkkjOn7iwPbHgdqzh77P0oH8x1xJBgwgKHhzGX1reI+vr9aavWwVuPr5/MUrXwKZmnDXCLbboebzAZEpEzKtpXHulRGoMjpWkWkjT6/wAemldtLEI0gDp9cvSlLu7bZQVurShA3UogD/NKuu2HY4SKbXN8hJKMwzgZimdQk6Akcp5daoGPfaItxRZw9ClKOnaFOvmlB281fCn3CeFKtGnHbk57h9QURJKjlEpSSdzMn4UvO30Pwpdkg+0pBL764UNiT3GgdkpHvL6qjnAqrYy0XAHEuLZnnnVmWPBE6bnpSd7flClOXSszp1Q0Fdxocp+8raq3iF2473nFZUq1SIGYgaSYGgpJSKRQ3xF8pWQgEqHvK1X4Enl6VB3bqye9vUk49JyNt67+HqafcM4T/E3SWVDMPac6JSnofEwPWgkMy7/ZTgZZYVcLHfejLI1COQnxOvwo3HmNgAMA6q9qDrHvGKsd1c5O6AAltEgazPsp0HLePKsfxu97R9SwZ+MamTv6U0nSoSKt2NcSuc6gJ0nTyp/gFoXXZiQ3Gxjfz6DlUMyJMxpyrQeFMFyJC1aOOf8ASOcemlJQ7Y9vrsItgVaF5SExsQkkJA8O7J/1VWOK79faqSFHUwnXrsB0gRU5j9w048EmezY1jTKVbIGu/M1Ub19GdOSTBKuf1zrNgQxvnDIQYhICRHRO1IlzYcjrHlSSjKiTtsP1pTD2HHFBLaMylaDoAOZPIVhjjl13pGw0H6/pXKnmbNlgxHbv8xBKEzvpz56mhWAbkTWd/aXhClqS+kwQnKoRvBkE/GK0HNURi7QUCDr4U01aJwlTsw66YVELTp1HzoqFjafjvV2xXDQJ6VVruwk6DSuf9M6k7GYFEcGldcZKdpoucjcVqGsRiuUr2iT/AJoFrpTADM3jifZWR4TI+FO0YuT7aQfEaGmBSaIRW4pmsk0uMqUFDQ7EHSQdxNSVg6tAKUKS61zbWNQPTbzGlVkooza1JIKSQRsQdRQ4gZfcEvVNLz2jhbUfaZWe6rwB2V+RrRMA4taeIbdHYvfcVsr+0/ofzrE7bFkqGV4QfvgaH+5I+Y+FTSLlQSAsB1v3TOo/tWPka0ZygxZY1I3Uii6is24e4udbhOYvtjdCtH2x4clitAwnFmbhGZpYUOY95PgRuK64ZVI5Z43EcE/X1tXSaUKKGWqkhMD6+t6H19f5pQIowTWNQRIoqoSCTAA3J2Hryqv8RcaWtrIK+0cHuIIJB/Edk/Pwqh3T+IYqqP6bH3RIT5nms+elSnlS6RWONvt6J/if7SGmpRagOr2zn+mPKNVny08ap1thN7iLnaXC1R1VpA/CnZAp+8cPw9QQAbu62yJ1g9CRt5CTVl4bt7l5IevIbQRKLZKcoA5KcnVR/CdPCo1KT7K2oroecPYLb2yAWkBSuSz709D003pnjl6lLgg9pcEQkJ90HeOSfEmpC5vc5KGiQBopzQwfuidz8qiMTXkTkbKgtUwE+2r8Sj+9UdJdCLfZAPYWtMuOauK9mRCR1A6mOdQV7aTqCQkE55nXlpOhHlUxcMLSmbt9Lqhsgr0T59TVXxG/LhISQEjb/HhUx0JXVxAKGhA5k/vzNaB9mNgWrdy4PeLpgGdkokT8Z+FZxasuPKQ02NTA9Sdz8a1rFlptbUNt6ZUhCROnTbxNNHrsEvhH4/i+RhaiQVOyRr7g0H71ml2omE8zvHjrU3xTflS0pPuhI+G8dBUE2JUT0oXfYUiXwOy7RxKY0EE+mwq9rfDTK3irllTtAA6DxPyqrYGzkbH3nCADP3unkKV4htXX1paaQpSUACQO6APE6UEZkQLucy3VkZyVxGqukmod5zdWve2qdu8AWDkW6gKMQlMrUB5JGlWnAeDGmgFvEOL0KQdkDqU8z51kgt0UjCMBuLgJyJhBMFw7DrpuanMSDVmj+HtyVOqgLWTr5A8h4VNcR8SNsjK1BURE8h4AfrVQsWi4pxxwGSPhRbMh9aOdiiQe+TKlDczQqUwLhpVxClJIbAMTuvofAUKCi2BtGnOLj96ZXm1OnFU2dTTskis4lbzvtUM+yNoq13rM1DPNJTJ51zTReLK3c4akCTvVdv0BMzU3jeMJToDJ5Ac/rrVbW0tw5l6DpyH7mtCL2UchkqVbbUNU7KP6Uu84AITt160+waxZkrulEJSJDYBzL56n3Rt51dEm/Rfh3CX7qSAlLad3FaJnoOp+VNHMoWUSFGYET3tYEaa08xDGXX1FtoFLWmVpOwSkHkPIk01sMqEqdLmVQkISkSsmNwToka770HFGU2Fct4JBBSRuCII9KSLZHSmZfUVSSSTuSTJ9akbq4TGcBIKtQ2nMQkeKlEmaVxaGWT6NyKcWV6to90gpPtIV7KvTkfEa0G1JUCRyEk8h4T1rmRJ1B+FL/R7TJa3S26czCi24NezKun3Fc/LenlrjDrawVlSFjZ1Gih/cNlCq32MbGpO3xaRkuE5hsFj2h5/eHnrStfBr+mm4P9oKkgC6TnRyea/8k8queG43bviWnkK8JAI8wdRWDllbUKbUChWxGqSP1o7aW3du4vpyPl0p455R2Tlhi+0bPjvGFnag9o6FL/8ArQQpZ9Bt6xWdYnxdfYgotW4LTR0ISdSPxL39BVfsOGFqchQKUz8fKrPfY4xhyOzZSFvxt7qPFR6+FM8jmIoqOu2L23D9lYNh69WCrcJ5k9Eo501e4kevG1BkpsrQaKdUf5iwNwn/AB8az69vnbl0uvrK9dSTv+EDkPKrlw0wq5JW4nO2wAG2xo3m90fijf4UV+gP6y5cLYBaW6A400JOocX3nFD70n2Z5ARRrvEy7nSCG2hILhIknon96a4rdO5RbpWO0KQp5z3W0nkOnOKonEeL94JQ5nQBlSkbCNNOvnTuVdCJWy0YhjGUN21mUkknWCY55j186a4neItUBKCXHlmVq3znx6DwFV/C79Vu0XAQXV6DmQOQAptdJW3DiiC4vU6+yOlI2PQ3xBxSlFT/ALR90aD1poy3nMIBjryFFSe1USpUJB571PWtmAAFRBjK2N1T1PTwraCS3AdgkLU8qEttJPeP3jznnp86R4i4jDrwDYORGsnmeVT1yEN2wbhIHMDqNxVWssBuLpS1togFUZlaJAHz9KP6B+2QN4/mWSfrnUhgnDlzcDuNwk7rVoP81ecL4PtbcZ3jnX95XsjyT+9M+IeLQB2NvM+H1pWqtmu9BuytbNKS4vtFoMgA6AxHrvTUYlcXi0tgFpkkTGhI/QVBMWilntHVoJ3CSdvOpq2vVp7rcFZEFXJAPWhZqLLYMNNLKUITI3VM6dSqoLizicCWbeJJ7yhEGovEsZLLZaQZUo95XNRNMsGwh10DKmSo949PWjfwyXrGliy2Vy6qVExEddgKv2FcNoSAp0EzGVv5T+1PcH4WZt4WoZ3OU7DyH61ziDGQyMoILq9B+1FRrtgcr0JY9xCm3AQk5ldB+woVCWDfZlS3IU8rfSYB5ChQtmpGhjY0g5tQoUWTI92qhxCo5Tqd6FCozLRKDbauLJ1MnenmK7JHLWhQpvUFaYbhBpKrxoKAI1MEAiQCQdajr1ZKlSSdT+tChTvwQFsohYIMHXUeUU1b5+tChRMgg3qWQgfwqjAnOBPP412hWkBDS50Q3HPfx1qU4GaSq4XmAP8ALXuAaFCt4Z7G7ohWnSkX6FCoenQtEjgiz2TwkxAMcp1186Lz+FChSy2NAuWDOH+GUZMgGDO2lZtdKJBJJJMyeZoUKeJP6OLbZP8AaflWofZ7/wAI1/cs/maFCrLZKehipw5LoyZ7aJnWABAms+X/AFR6/OhQoehQ+tP6yfI0vj3sj+39aFCk9GIi193zHzqfZP8A8hv+4UKFMwFzwtpKuzzAK9o6gHWTrrU7imiUAaDMNBtXaFPHQj2VLj91Wgkx5mqlhY0J5zvzoUKSWx46DYkNDUpb6WgjSTrHPzoUKULK6oy7rrFa5wQgfwyNBt0oUKeGxcmh/cn2/Ws0Wom+EmYOk8qFCjLYsSdxD21elChQpRj/2Q==");
+		img2.style.width="90%";
+		divl.appendChild(img2);
+		var para= document.createElement("p");
+		para.innerHTML="As an intellectual object, a book is prototypically a composition of such great length that it takes a considerable investment of time to compose and a still considerable, though not so extensive, investment of time to read. This sense of book has a restricted and an unrestricted sense. In the restricted sense, a book is a self-sufficient section or part of a longer composition, a usage that reflects the fact that, in antiquity, long works had to be written on several scrolls, and each scroll had to be identified by the book it contained. So, for instance, each part of Aristotle's Physics is called a book. In the unrestricted sense, a book is the compositional whole of which such sections, whether called books or chapters or parts, are parts."
+		divr.setAttribute("style","margin-left:30%");
+		divr.appendChild(para);
+		leftside.appendChild(divl);
+		leftside.appendChild(divr);
+
+
+		var rightside=document.createElement("div");
+		rightside.style.position="absolute";
+		rightside.style.width="30%";
+		rightside.style.height="flex";
+		rightside.style.left="10px";
+		
+		
+		var right1=document.createElement("div");
+		var headright=document.createElement("h3");
+		headright.innerHTML="POLITICS";
+		var img=document.createElement("img");
+		img.setAttribute("src","https://st.focusedcollection.com/14026668/i/650/focused_173083946-stock-photo-portrait-young-women-holding-american.jpg");
+		left1.appendChild(img);
+		img.style.width="100%";
+		right1.appendChild(headright);
+		right1.appendChild(img);
+		var heading9=document.createElement("h3");
+		heading9.innerHTML="A CHINESE COMPANY TO BUILD A FAKE MOON TO REPLACE THE CITY";
+		right1.appendChild(heading9);
+		 		
+		var p=document.createElement("p");
+		p.innerHTML="The transition to electric vehicles (EVs) is just beginning and with automakers and other countries making significant commitments to phase out conventional internal combustion engine (ICE) vehicles, the future for EVs is bright. But electrification of transportation (e-mobility) goes well beyond passenger vehicles to include fleet vehicles (cars and trucks), mass transit buses, light rail, ships and even non-road vehicles like forklifts.";
+		right1.appendChild(p);
+		rightside.appendChild(right1);
+		div.appendChild(rightside);
+		rightside.setAttribute("style","margin-left:970px");
+
+		var dright=document.createElement("div");
+		dright.setAttribute("style","border:1px solid black");
+		var per1=document.createElement("p");
+		var hright1=document.createElement("h3");
+		hright1.innerHTML="#METOO MOVEMENTS IN INDIA GETS BOOM";
+		per1.innerHTML="The Me Too (or #MeToo) movement, with variations of related local or international names, is a movement against sexual harassment and sexual assault of women. The phrase  was initially used in this context on social media in 2006, on Myspace, by sexual harassment survivor and activist Tarana Burke.";
+		dright.appendChild(hright1);
+		dright.appendChild(per1);
+		var hright2=document.createElement("h3");
+		hright2.innerHTML="PLANE CRASHES IN INDONESIA";
+		var per2=document.createElement("p");
+		per2.innerHTML="In a recent Tragic event, a plane crashes in Indonesia leaving 189 people died in the sea. Official sources reveal that there is no likely so survivors in the crush. In a recent tragic event, a plane crashes in Indonesia leaving 189 people died in the sea.";
+		dright.appendChild(hright2);
+		dright.appendChild(per2);
+		var hright3=document.createElement("h3");
+		hright3.innerHTML="CAN HUMANS SURVIVE IN MARS?"
+		var per3=document.createElement("p");
+		per3.innerHTML="Human survival on Mars would require living in artificial Mars habitats with complex life-support systems. One key aspect of this would be water processing systems. Being made mainly of water, a human being would die in a matter of days without it.";
+		dright.appendChild(hright3);
+		dright.appendChild(per3);
+		rightside.appendChild(dright);		 
+		 document.body.appendChild(div);
 		 }
     </script>
 </body>
