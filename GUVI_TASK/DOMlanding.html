@@ -8,6 +8,9 @@ body
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to bottom left,#78FCFA,#8F5BDC);
 }
+.div5{
+	transform: rotate(-2deg);
+}
 </style>
 </head>
 <body id="landingbody">
@@ -74,24 +77,91 @@ body
 	document.body.appendChild(div2);
 	
 		
-	var leftside=document.createElement("div");
-	leftside.style.position="absolute";
-	leftside.style.width="50%";
-	leftside.style.height="500px";
-	leftside.style.left="10px";
-				
-		var left1=document.createElement("div");
-		left1.innerHTML="Fly makes you faster";
-		left1.setAttribute("style","float:left;color:white;margin-top:50px;margin-left:140px;font-family:Arial,sans-serif;font-size:70px;width:600px");
-		document.body.appendChild(left1);
-		leftside.appendChild(left1);
+	var div3=document.createElement("div");
+	
+		var leftside=document.createElement("div");
+		leftside.style.position="absolute";
+		leftside.style.width="50%";
+		leftside.style.height="flex";
+		leftside.style.left="10px";
 		
-		var left2=document.createElement("div");
-		left2.innerHTML="New free template by unicookies.com. For more templates visit the site. Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
-		left2.setAttribute("style","float:left;color:white;margin-top:10px;margin-left:140px;font-family:Arial,sans-serif;font-size:20px;width:500px");
-		document.body.appendChild(left2);
-		leftside.appendChild(left2);
-										
+		var rightside=document.createElement("div");
+		rightside.style.position="absolute";
+		rightside.style.width="50%";
+		rightside.style.height="flex";
+		rightside.style.left="10px";
+
+		var left1=document.createElement("div");
+		left1.setAttribute("style","margin-left:50px");
+		
+		var head=document.createElement("p");
+		head.innerHTML="Fly Makes you Faster";
+		head.setAttribute("style","font-size:70px;color:white;font-family:Helvetica,Arial,sans-serif;margin-left:70px");
+		
+		var p = document.createElement("p");
+		p.innerHTML="New free template by <b>uicookies.com.</b> For more template visit the site. Lorem ipsum dolor sit amet consecteur adipisicing elit."
+		p.setAttribute("style","font-size:25px;color:white;font-family:Helvetica,Arial,sans-serif;margin-left:70px");
+		
+		var button=document.createElement("button");
+		button.innerHTML="<b>SEE PRICING</b>";
+		button.setAttribute("style","width: 40%;height: 40px;border-radius: 30px;background-color:#16E836;top: 10px;color:white;margin-left:70px");
+		
+		left1.appendChild(head);
+		left1.appendChild(p);
+		left1.appendChild(button);
+		leftside.appendChild(left1);
+		div3.appendChild(leftside);
+	
+		var right=document.createElement("div");
+		right.style.border="1px solid black";
+		right.setAttribute("style","background:white;padding-top:30px");
+
+		var header=document.createElement("h1");
+		header.innerHTML="Sign up for free";
+		header.setAttribute("style","margin-left:100px")
+		header.style.color="black";
+		
+		var signup=document.createElement("signup");
+		signup.setAttribute("style","background:white;width:400px;height:1000px;padding:10px;padding-bottom:10px");
+		
+		var textbox1=document.createElement("input");
+		textbox1.setAttribute("placeholder","Full Name");
+		textbox1.setAttribute("style","background:#E3EFE5;width:70%;border:0;margin:0 0 15px ;padding:15px;font-size:14px;margin-left:70px");
+		signup.appendChild(textbox1);
+
+		var textbox2=document.createElement("input");
+		textbox2.setAttribute("placeholder","Email");
+		textbox2.setAttribute("style","background:#E3EFE5;width:70%;border:0;margin:0 0 15px;padding:17px;font-size:14px;margin-left:80px");
+		signup.appendChild(textbox2);
+
+		var textbox3=document.createElement("input");
+		textbox3.setAttribute("placeholder","Email");
+		textbox3.setAttribute("style","background:#E3EFE5;width:70%;border:0;margin:0 0 15px;padding:17px;font-size:14px;margin-left:80px");
+		signup.appendChild(textbox3);
+
+		var textbox4=document.createElement("input");
+		textbox4.setAttribute("placeholder","Type");
+		textbox4.setAttribute("style","background:#E3EFE5;width:70%;border:0;margin:0 0 15px;padding:17px;font-size:14px;margin-left:80px");
+		signup.appendChild(textbox4);
+		
+		var submit=document.createElement("button");
+		submit.innerHTML="<b>Register</b>";
+		submit.setAttribute("style","background:blue;width:70%;border-radius:30px;padding:10px;color:white;font-size:14px;margin-left:80px");
+		signup.appendChild(submit);
+		
+		right.appendChild(header);
+		right.appendChild(signup);
+		rightside.setAttribute("style","margin-left:60%;");
+		rightside.style.marginRight="80px";
+		rightside.appendChild(right);
+		div3.appendChild(rightside);
+		
+	document.body.appendChild(div3);
+	
+	var div5=document.createElement("div");
+	div5.className="div5";
+	div5.setAttribute("style","height:400px;background-color:white;margin-top:40px;width: 150%;")
+	document.body.appendChild(div5);
 	
 </script>
 </body>
