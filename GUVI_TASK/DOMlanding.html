@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>DOM Landing Page</title>
+<style>
+body
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom left,#78FCFA,#8F5BDC);
+}
+</style>
+</head>
+<body id="landingbody">
+<script>
+	
+	var div1=document.createElement("div");
+	div1.setAttribute("style","height:40px;background-color:#F3EFF8")
+		
+		var ledimg = document.createElement("img");
+		ledimg.setAttribute("src","https://st2.depositphotos.com/3730475/7271/i/950/depositphotos_72716165-stock-photo-set-of-round-empty-glossy.jpg")
+		div1.appendChild(ledimg);
+		ledimg.style.height="20px";
+		
+		var textbox1=document.createElement("textarea");
+		textbox1.innerHTML="	Search or Enter the Website name";
+		textbox1.setAttribute("style","font-family:Helvetica,Arial,sans-serif;font-size:14px;height:30px;width:700px;border-color:#EFF2EE;margin-left:300px");
+		div1.appendChild(textbox1);
+		
+		var addimg = document.createElement("img");
+		addimg.setAttribute("src","https://pngimage.net/wp-content/uploads/2018/05/add-logo-png-6.png")
+		addimg.setAttribute("style","margin-left:240px");
+		div1.appendChild(addimg);
+		addimg.style.height="20px";
+		
+	document.body.appendChild(div1);
+	
+	var div2=document.createElement("p");
+	
+		var list1=document.createElement("padding");
+		list1.innerHTML="Landing";
+		list1.setAttribute("style","margin-left:140px;color:white;font-family:Helvetica,Arial,sans-serif;font-size:18");
+		div2.appendChild(list1);
+		
+		var list2=document.createElement("padding");
+		list2.innerHTML="Home";
+		list2.setAttribute("style","margin-left:550px;color:white;font-family:Helvetica,Arial,sans-serif;font-size:18");
+		div2.appendChild(list2);
+		
+		var list3=document.createElement("padding");
+		list3.innerHTML="Features";
+		list3.setAttribute("style","margin-left:15px;color:white;font-family:Helvetica,Arial,sans-serif;font-size:18");
+		div2.appendChild(list3);
+		
+		var list4=document.createElement("padding");
+		list4.innerHTML="Reviews";
+		list4.setAttribute("style","margin-left:15px;color:white;font-family:Helvetica,Arial,sans-serif;font-size:18");
+		div2.appendChild(list4);
+		
+		var list5=document.createElement("padding");
+		list5.innerHTML="Pricing";
+		list5.setAttribute("style","margin-left:15px;color:white;font-family:Helvetica,Arial,sans-serif;font-size:18");
+		div2.appendChild(list5);
+	
+		var list5=document.createElement("padding");
+		list5.innerHTML="FAQ";
+		list5.setAttribute("style","margin-left:15px;color:white;font-family:Helvetica,Arial,sans-serif;font-size:18");
+		div2.appendChild(list5);
+		
+		var list5=document.createElement("padding");
+		list5.innerHTML="	Get Started	  ";
+		list5.setAttribute("style","margin-left:15px;color:white;font-family:Helvetica,Arial,sans-serif;font-size:18;border:1px solid white");
+		div2.appendChild(list5);
+			
+	document.body.appendChild(div2);
+	
+		
+	var leftside=document.createElement("div");
+	leftside.style.position="absolute";
+	leftside.style.width="50%";
+	leftside.style.height="500px";
+	leftside.style.left="10px";
+				
+		var left1=document.createElement("div");
+		left1.innerHTML="Fly makes you faster";
+		left1.setAttribute("style","float:left;color:white;margin-top:50px;margin-left:140px;font-family:Arial,sans-serif;font-size:70px;width:600px");
+		document.body.appendChild(left1);
+		leftside.appendChild(left1);
+		
+		var left2=document.createElement("div");
+		left2.innerHTML="New free template by unicookies.com. For more templates visit the site. Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
+		left2.setAttribute("style","float:left;color:white;margin-top:10px;margin-left:140px;font-family:Arial,sans-serif;font-size:20px;width:500px");
+		document.body.appendChild(left2);
+		leftside.appendChild(left2);
+										
+	
+</script>
+</body>
+</html>
