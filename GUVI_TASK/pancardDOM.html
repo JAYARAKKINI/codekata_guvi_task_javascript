@@ -1,1110 +1,466 @@
+<!Doc>
 <html>
-<head>
-<title>New PAN card or/And changes or correction in Pan Data</title>
-<style type="text/css">
-body{
-font-family:Helvetica, Arial, sans-serif;
-}
-
-</style>
-</head>
-<body id="body">
-<script>
-var b=document.getElementById("body");
-b.style.backgroundColor="#EBFEC3";
-b.style.fontfamily="Arial, Serif";
-var table=document.createElement("table");
-table.setAttribute("width","100%");
-table.setAttribute("border","1px","solid");
-table.setAttribute("style","border-collapse:collapse");
-
-
-var cap=document.createElement("caption");
-var h4=document.createElement("h4");
-h4.innerHTML="Request For New PAN Card Or/And Changes Or Connection in PAN Data";
-h4.style.height="0px";
-h4.style.color="white";
-var p=document.createElement("p");
-p.innerHTML="Fields marked with *(asterisk) are mandatory. To avoid mistakes(s). please refer guidelines and instructions";
-p.style.height="5px";
-p.style.fontStyle="italic";
-p.style.color="white";
-cap.appendChild(h4);
-cap.appendChild(p);
-table.appendChild(cap);
-cap.setAttribute("style","background-color:#ca1b40");
-
-var row1=table.insertRow(0);
-var cell=row1.insertCell(0);
-var cell1=row1.insertCell(1);
-cell.setAttribute("width","3%");
-
-var text=document.createElement("p");
-var m1=document.createElement("label");
-m1.innerHTML="*";
-m1.style.color="red";
-var lab1=document.createElement("label");
-lab1.innerHTML="yes";
-lab1.style.paddingLeft="200px";
-var i1=document.createElement("input");
-i1.setAttribute("type","radio");
-var lab2=document.createElement("label");
-lab2.innerHTML="no";
-lab2.style.paddingLeft="30px";
-var i2=document.createElement("input");
-i2.setAttribute("type","radio");
-text.innerHTML="Whether citizen of India";
-text.appendChild(m1);
-cell1.appendChild(text);
-text.appendChild(lab1);
-text.appendChild(i1);
-text.appendChild(lab2);
-text.appendChild(i2);
-
-
-var row2=table.insertRow(1);
-var c21=row2.insertCell(0);
-var c22=row2.insertCell(1);
-c21.setAttribute("width","3%");
-c21.setAttribute("height","30px");
-
-var l1=document.createElement("p");
-var m2=document.createElement("label");
-m2.innerHTML="*";
-m2.style.color="red";
-var lab3=document.createElement("label");
-lab3.innerHTML="Permanent Account Number(PAN)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var i3=document.createElement("input");
-i3.setAttribute("type","text");
-l1.appendChild(m2);
-l1.appendChild(lab3);
-l1.appendChild(i3);
-c22.appendChild(l1);
-
-var row3=table.insertRow(2);
-var c31=row3.insertCell(0);
-var c32=row3.insertCell(1);
-c31.setAttribute("width","3%");
-c31.setAttribute("height","30px");
-
-var c1=document.createElement("input");
-c1.setAttribute("type","checkbox");
-c31.appendChild(c1);
-var text1=document.createElement("p");
-var m3=document.createElement("label");
-m3.innerHTML="*";
-m3.style.color="red";
-var text2=document.createElement("B");
-text2.innerHTML="1. Name";
-text1.appendChild(m3);
-text1.appendChild(text2);
-c32.appendChild(text1);
-
-var row4=table.insertRow(3);
-var c41=row4.insertCell(0);
-var c42=row4.insertCell(1);
-c41.setAttribute("width","3%");
-c41.setAttribute("height","30px");
-
-
-var text2=document.createElement("b");
-var lab1=document.createElement("label");
-lab1.innerHTML="Shri/Mr.";
-lab1.style.paddingLeft="60px";
-var i1=document.createElement("input");
-i1.setAttribute("type","radio");
-var lab2=document.createElement("label");
-lab2.innerHTML="Smt/Mrs.";
-lab2.style.paddingLeft="30px";
-var i2=document.createElement("input");
-i2.setAttribute("type","radio");
-var lab3=document.createElement("label");
-lab3.innerHTML="Kumari/Ms.";
-lab3.style.paddingLeft="30px";
-var i3=document.createElement("input");
-i3.setAttribute("type","radio");
-text2.innerHTML="Title";
-c42.appendChild(text2);
-text2.appendChild(lab1);
-text2.appendChild(i1);
-text2.appendChild(lab2);
-text2.appendChild(i2);
-text2.appendChild(lab3);
-text2.appendChild(i3);
-
-var row5=table.insertRow(4);
-var c51=row5.insertCell(0);
-var c52=row5.insertCell(1);
-c51.setAttribute("width","3%");
-c51.setAttribute("height","30px");
-
-
-var p=document.createElement("p");
-var lab1=document.createElement("B");
-lab1.innerHTML="Last Name/Surname&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var lab2=document.createElement("B");
-lab2.innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var lab3=document.createElement("B");
-lab3.innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Middle Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var i1=document.createElement("input");
-var i2=document.createElement("input");
-var i3=document.createElement("input");
-p.setAttribute("type","text");
-p.appendChild(lab1);
-p.appendChild(i1);
-p.appendChild(lab2);
-p.appendChild(i2);
-p.appendChild(lab3);
-p.appendChild(i3);
-c52.appendChild(p);
-
-var row6=table.insertRow(5);
-var c61=row6.insertCell(0);
-var c62=row6.insertCell(1);
-c61.setAttribute("width","3%");
-c61.setAttribute("height","30px");
-var t1=document.createElement("p");
-var m12=document.createElement("label");
-m12.innerHTML="*";
-m12.style.color="red";
-var text12=document.createElement("b");
-text12.innerHTML="Name as you would like it printed on the card&nbsp;&nbsp;&nbsp;";
-var t22=document.createElement("span");
-t22.style.color="blue";
-t22.innerHTML="(Prefix like Shri,Smt,Kumari,Late,Dr,CA,Ms,Mr,M/s ec..,are not allowed.)";
-
-t1.appendChild(m12);
-text12.appendChild(t22);
-t1.appendChild(text12);
-c62.appendChild(t1);
-
-var row7=table.insertRow(6);
-var c71=row7.insertCell(0);
-var c72=row7.insertCell(1);
-c71.setAttribute("width","3%");
-c71.setAttribute("height","30px");
-
-var p=document.createElement("p");
-var i=document.createElement("input");
-p.setAttribute("type","text");
-p.appendChild(i);
-c72.appendChild(p);
-
-var row8=table.insertRow(7);
-var c81=row8.insertCell(0);
-var c82=row8.insertCell(1);
-c81.setAttribute("width","3%");
-c81.setAttribute("height","30px");
-var t2=document.createElement("p1");
-var text21=document.createElement("b");
-text21.innerHTML="Details of Parents&nbsp;&nbsp;&nbsp";
-var t23=document.createElement("span");
-t23.style.color="blue";
-t23.innerHTML="(Prefix like Shri,Smt,Kumari,Late,Dr,CA,Ms,Mr,M/s ec..,are not allowed.)";
-t2.appendChild(text21);
-c82.appendChild(t2);
-text21.appendChild(t23);
-
-var row9=table.insertRow(8);
-var c91=row9.insertCell(0);
-var c92=row9.insertCell(1);
-c91.setAttribute("width","3%");
-c91.setAttribute("height","30px");
-
-var text=document.createElement("b");
-var lab1=document.createElement("label");
-lab1.innerHTML="Yes";
-lab1.style.paddingLeft="55px";
-var i1=document.createElement("input");
-i1.setAttribute("type","radio");
-var lab2=document.createElement("label");
-lab2.innerHTML="No";
-var i2=document.createElement("input");
-i2.setAttribute("type","radio");
-text.innerHTML="Whether Mother is single parent and you wish to apply for PAN by furnishing the name of your <br/>mother name only &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-c92.appendChild(text);
-text.appendChild(lab1);
-text.appendChild(i1);
-text.appendChild(lab2);
-text.appendChild(i2);
-
-var row10=table.insertRow(9);
-var c101=row10.insertCell(0);
-var c102=row10.insertCell(1);
-c101.setAttribute("width","3%");
-c101.setAttribute("height","30px");
-
-var c2=document.createElement("input");
-c2.setAttribute("type","checkbox");
-c101.appendChild(c2);
-var text3=document.createElement("b");
-var m4=document.createElement("label");
-m4.innerHTML="*";
-m4.style.color="red";
-var text4=document.createElement("label");
-
-text4.innerHTML="Father's Name";
-var t4=document.createElement("span");
-t4.style.color="blue";
-t4.innerHTML="(Mandatory field,Even married women should give father's name only.)";
-text3.appendChild(m4);
-text3.appendChild(text4);
-text4.appendChild(t4);
-c102.appendChild(text3);
-
-var row11=table.insertRow(10);
-var c111=row11.insertCell(0);
-var c112=row11.insertCell(1);
-c111.setAttribute("width","3%");
-c111.setAttribute("height","30px");
-
-var p=document.createElement("p");
-var lab1=document.createElement("B");
-lab1.innerHTML="Last Name/Surname&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var lab2=document.createElement("B");
-lab2.innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var lab3=document.createElement("B");
-lab3.innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Middle Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var i1=document.createElement("input");
-var i2=document.createElement("input");
-var i3=document.createElement("input");
-p.setAttribute("type","text");
-p.appendChild(lab1);
-p.appendChild(i1);
-p.appendChild(lab2);
-p.appendChild(i2);
-p.appendChild(lab3);
-p.appendChild(i3);
-c112.appendChild(p);
-
-var row12=table.insertRow(11);
-var c121=row12.insertCell(0);
-var c122=row12.insertCell(1);
-c121.setAttribute("width","3%");
-c121.setAttribute("height","30px");
-
-var text1=document.createElement("b");
-text1.innerHTML="Mother's Name&nbsp;&nbsp;&nbsp;";
-var t6=document.createElement("span");
-t6.style.color="blue";
-t6.innerHTML="(This field is optional.)";
-text1.appendChild(t6);
-c122.appendChild(text1);
-
-var row13=table.insertRow(12);
-var c131=row13.insertCell(0);
-var c132=row13.insertCell(1);
-c131.setAttribute("width","3%");
-c131.setAttribute("height","30px");
-
-var p=document.createElement("p");
-var lab1=document.createElement("B");
-lab1.innerHTML="Last Name/Surname&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var lab2=document.createElement("B");
-lab2.innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var lab3=document.createElement("B");
-lab3.innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Middle Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var i1=document.createElement("input");
-var i2=document.createElement("input");
-var i3=document.createElement("input");
-p.setAttribute("type","text");
-p.appendChild(lab1);
-p.appendChild(i1);
-p.appendChild(lab2);
-p.appendChild(i2);
-p.appendChild(lab3);
-p.appendChild(i3);
-c132.appendChild(p);
-
-var row14=table.insertRow(13);
-var c141=row14.insertCell(0);
-var c142=row14.insertCell(1);
-c141.setAttribute("width","3%");
-c141.setAttribute("height","30px");
-
-var text=document.createElement("b");
-var m51=document.createElement("label");
-m51.innerHTML="*";
-m51.style.color="red";
-var lab1=document.createElement("label");
-lab1.innerHTML="Father Name";
-lab1.style.paddingLeft="300px";
-var i1=document.createElement("input");
-i1.setAttribute("type","radio");
-var lab2=document.createElement("label");
-lab2.innerHTML="Mother Name";
-lab2.style.paddingLeft="30px";
-var i2=document.createElement("input");
-i2.setAttribute("type","radio");
-text.innerHTML="4. Select parent which is to be printed on the card";
-var ch1=document.createElement("input");
-ch1.setAttribute("type","checkbox");
-
-text.appendChild(m51);
-c142.appendChild(text);
-text.appendChild(lab1);
-text.appendChild(i1);
-text.appendChild(lab2);
-text.appendChild(i2);
-
-var row15=table.insertRow(14);
-var c151=row15.insertCell(0);
-var c152=row15.insertCell(1);
-c151.setAttribute("width","3%");
-c151.setAttribute("height","30px");
-
-var text=document.createElement("b");
-var lab1=document.createElement("label");
-lab1.innerHTML="5. Date of Birth/Incorporation/Agreement/Partnership<br/>or trust Deed/Formation of body of individuals/<br/>Association of Persons&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var i1=document.createElement("input");
-i1.style.marginLeft="55px";
-i1.setAttribute("type","date");
-c152.appendChild(text);
-text.appendChild(lab1);
-text.appendChild(i1);
-
-var row16=table.insertRow(15);
-var c161=row16.insertCell(0);
-var c162=row16.insertCell(1);
-c161.setAttribute("width","3%");
-c161.setAttribute("height","30px");
-
-var text2=document.createElement("b");
-var m6=document.createElement("label");
-m6.innerHTML="*";
-m6.style.color="red";
-var lab1=document.createElement("label");
-lab1.innerHTML="Male";
-lab1.style.paddingLeft="600px";
-var i1=document.createElement("input");
-i1.setAttribute("type","radio");
-var lab2=document.createElement("label");
-lab2.innerHTML="Female";
-lab2.style.paddingLeft="35px";
-var i2=document.createElement("input");
-i2.setAttribute("type","radio");
-var lab3=document.createElement("label");
-lab3.innerHTML="Transgender";
-lab3.style.paddingLeft="35px";
-var i3=document.createElement("input");
-i3.setAttribute("type","radio");
-text2.innerHTML="6. Gender";
-var ch1=document.createElement("input");
-ch1.setAttribute("type","checkbox");
-text2.appendChild(m6);
-c162.appendChild(text2);
-text2.appendChild(lab1);
-text2.appendChild(i1);
-text2.appendChild(lab2);
-text2.appendChild(i2);
-text2.appendChild(lab3);
-text2.appendChild(i3);
-c161.appendChild(ch1);
-
-var row17=table.insertRow(16);
-var c171=row17.insertCell(0);
-var c172=row17.insertCell(1);
-c171.setAttribute("width","3%");
-c171.setAttribute("height","30px");
-
-var text1=document.createElement("b");
-text1.innerHTML="7. Photo Mismatch";
-var ch1=document.createElement("input");
-ch1.setAttribute("type","checkbox");
-c172.appendChild(text1);
-c171.appendChild(ch1);
-
-
-var row18=table.insertRow(17);
-var c181=row18.insertCell(0);
-var c182=row18.insertCell(1);
-c181.setAttribute("width","3%");
-c181.setAttribute("height","30px");
-
-
-var text1=document.createElement("b");
-text1.innerHTML="8. Signature Mismatch";
-var ch1=document.createElement("input");
-ch1.setAttribute("type","checkbox");
-c182.appendChild(text1);
-c181.appendChild(ch1);
-
-var row19=table.insertRow(18);
-var c191=row19.insertCell(0);
-var c192=row19.insertCell(1);
-c191.setAttribute("width","3%");
-c191.setAttribute("height","30px");
-
-var text2=document.createElement("b");
-var m7=document.createElement("label");
-m7.innerHTML="*";
-m7.style.color="red";
-var lab1=document.createElement("label");
-lab1.innerHTML="Residential";
-lab1.style.paddingLeft="500px";
-var i1=document.createElement("input");
-i1.setAttribute("type","radio");
-var lab2=document.createElement("label");
-lab2.innerHTML="Office";
-lab2.style.paddingLeft="30px";
-var i2=document.createElement("input");
-i2.setAttribute("type","radio");
-text2.innerHTML="9. Address for Communication";
-var ch1=document.createElement("input");
-ch1.setAttribute("type","checkbox");
-c192.appendChild(text2);
-text2.appendChild(m7);
-text2.appendChild(lab1);
-text2.appendChild(i1);
-text2.appendChild(lab2);
-text2.appendChild(i2);
-c191.appendChild(ch1);
-
-var row20=table.insertRow(19);
-var c201=row20.insertCell(0);
-var c202=row20.insertCell(1);
-c201.setAttribute("width","3%");
-c201.setAttribute("height","30px");
-
-var l1=document.createElement("b");
-var lab3=document.createElement("label");
-lab3.innerHTML="Office Name";
-var i3=document.createElement("input");
-i3.style.marginLeft="640px";
-i3.setAttribute("type","text");
-var ch1=document.createElement("input");
-ch1.setAttribute("type","checkbox");
-l1.appendChild(lab3);
-l1.appendChild(i3);
-c202.appendChild(l1);
-c201.appendChild(ch1);
-
-var row21=table.insertRow(20);
-var c211=row21.insertCell(0);
-var c212=row21.insertCell(1);
-c211.setAttribute("width","3%");
-c211.setAttribute("height","30px");
-
-var l1=document.createElement("b");
-var lab3=document.createElement("label");
-lab3.innerHTML="Flat/Door/Block No.";
-var i3=document.createElement("input");
-i3.style.marginLeft="590px";
-i3.setAttribute("type","text");
-l1.appendChild(lab3);
-l1.appendChild(i3);
-c212.appendChild(l1);
-c211.appendChild(ch1);
-
-var row22=table.insertRow(21);
-var c221=row22.insertCell(0);
-var c222=row22.insertCell(1);
-c221.setAttribute("width","3%");
-c221.setAttribute("height","30px");
-
-var l1=document.createElement("b");
-var lab3=document.createElement("label");
-lab3.innerHTML="Name of Premises/Building Village";
-var i3=document.createElement("input");
-i3.style.marginLeft="490px";
-i3.setAttribute("type","text");
-l1.appendChild(lab3);
-l1.appendChild(i3);
-c222.appendChild(l1);
-c221.appendChild(ch1);
-
-var row23=table.insertRow(22);
-var c231=row23.insertCell(0);
-var c232=row23.insertCell(1);
-c231.setAttribute("width","3%");
-c231.setAttribute("height","30px");
-
-var l1=document.createElement("b");
-var lab3=document.createElement("label");
-lab3.innerHTML="Road/Street/Lane/PostOffice";
-var i3=document.createElement("input");
-i3.style.marginLeft="530px";
-i3.setAttribute("type","text");
-l1.appendChild(lab3);
-l1.appendChild(i3);
-c232.appendChild(l1);
-c231.appendChild(ch1);
-
-
-var row24=table.insertRow(23);
-var c241=row24.insertCell(0);
-var c242=row24.insertCell(1);
-c241.setAttribute("width","3%");
-c241.setAttribute("height","30px");
-
-var l1=document.createElement("b");
-var lab3=document.createElement("label");
-lab3.innerHTML="Area/Locality/Taluka/Sub-Division";
-var i3=document.createElement("input");
-i3.style.marginLeft="490px";
-i3.setAttribute("type","text");
-l1.appendChild(lab3);
-l1.appendChild(i3);
-c242.appendChild(l1);
-c241.appendChild(ch1);
-
-var row25=table.insertRow(24);
-var c251=row25.insertCell(0);
-var c252=row25.insertCell(1);
-c251.setAttribute("width","3%");
-c251.setAttribute("height","30px");
-
-var l1=document.createElement("b");
-var lab3=document.createElement("label");
-lab3.innerHTML="Town/City/District";
-var i3=document.createElement("input");
-i3.style.marginLeft="600px";
-i3.setAttribute("type","text");
-l1.appendChild(lab3);
-l1.appendChild(i3);
-c252.appendChild(l1);
-c251.appendChild(ch1);
-
-
-var row26=table.insertRow(25);
-var c261=row26.insertCell(0);
-var c262=row26.insertCell(1);
-c261.setAttribute("width","3%");
-c261.setAttribute("height","30px");
-
-var l1=document.createElement("b");
-var lab3=document.createElement("label");
-lab3.innerHTML="State/Union Territory";
-var i3=document.createElement("input");
-i3.style.marginLeft="600px";
-i3.setAttribute("type","text");
-l1.appendChild(lab3);
-l1.appendChild(i3);
-c262.appendChild(l1);
-c261.appendChild(ch1);
-
-var row27=table.insertRow(26);
-var c271=row27.insertCell(0);
-var c272=row27.insertCell(1);
-c271.setAttribute("width","3%");
-c271.setAttribute("height","30px");
-
-var l1=document.createElement("b");
-var lab3=document.createElement("label");
-lab3.innerHTML="Pincode";
-var i3=document.createElement("input");
-i3.style.marginLeft="680px";
-i3.setAttribute("type","text");
-l1.appendChild(lab3);
-l1.appendChild(i3);
-c272.appendChild(l1);
-c271.appendChild(ch1);
-
-var row28=table.insertRow(27);
-var c281=row28.insertCell(0);
-var c282=row28.insertCell(1);
-c281.setAttribute("width","3%");
-c281.setAttribute("height","30px");
-
-var l1=document.createElement("b");
-var lab3=document.createElement("label");
-lab3.innerHTML="Country";
-var i3=document.createElement("input");
-i3.style.marginLeft="680px";
-i3.setAttribute("type","text");
-l1.appendChild(lab3);
-l1.appendChild(i3);
-c282.appendChild(l1);
-c281.appendChild(ch1);
-
-
-var row29=table.insertRow(28);
-var c291=row29.insertCell(0);
-var c292=row29.insertCell(1);
-c291.setAttribute("width","3%");
-c291.setAttribute("height","30px");
-
-var l1=document.createElement("b");
-var lab3=document.createElement("label");
-lab3.innerHTML="ZIP";
-var i3=document.createElement("input");
-i3.style.marginLeft="700px";
-i3.setAttribute("type","text");
-l1.appendChild(lab3);
-l1.appendChild(i3);
-c292.appendChild(l1);
-c291.appendChild(ch1);
-
-var row30=table.insertRow(29);
-var c301=row30.insertCell(0);
-var c302=row30.insertCell(1);
-c301.setAttribute("width","3%");
-c301.setAttribute("height","30px");
-
-var text1=document.createElement("b");
-text1.innerHTML="10. If you desire to update your other address, give required details & submit proof of other address also";
-c302.appendChild(text1);
-c301.appendChild(ch1);
-
-var row31=table.insertRow(30);
-var c311=row31.insertCell(0);
-var c312=row31.insertCell(1);
-c311.setAttribute("width","3%");
-c311.setAttribute("height","30px");
-
-var text2=document.createElement("label");
-var lab1=document.createElement("label");
-lab1.innerHTML="Mobile No:";
-lab1.style.paddingLeft="590px";
-var i1=document.createElement("input");
-i1.setAttribute("type","radio");
-var lab2=document.createElement("label");
-lab2.innerHTML="Telephone No:";
-lab2.style.paddingLeft="25px";
-var i2=document.createElement("input");
-i2.setAttribute("type","radio");
-text2.innerHTML="11. Telephone Number.";
-var ch1=document.createElement("input");
-ch1.setAttribute("type","checkbox");
-c312.appendChild(text2);
-text2.appendChild(lab1);
-text2.appendChild(i1);
-text2.appendChild(lab2);
-text2.appendChild(i2);
-c311.appendChild(ch1);
-
-var row32=table.insertRow(31);
-var c321=row32.insertCell(0);
-var c322=row32.insertCell(1);
-c321.setAttribute("width","3%");
-c321.setAttribute("height","30px");
-
-var l1=document.createElement("b");
-var m8=document.createElement("label");
-m8.innerHTML="*";
-m8.style.color="red";
-var lab3=document.createElement("label");
-lab3.innerHTML="E-Mail Id:";
-var i3=document.createElement("input");
-i3.style.marginLeft="650px";
-i3.setAttribute("type","text");
-var ch1=document.createElement("input");
-ch1.setAttribute("type","checkbox");
-l1.appendChild(m8);
-l1.appendChild(lab3);
-l1.appendChild(i3);
-c322.appendChild(l1);
-c321.appendChild(ch1);
-
-var row33=table.insertRow(32);
-var c331=row33.insertCell(0);
-var c332=row33.insertCell(1);
-c331.setAttribute("width","3%");
-c331.setAttribute("height","30px");
-
-var text2=document.createElement("label");
-var lab1=document.createElement("label");
-lab1.innerHTML="AADHAR";
-lab1.style.paddingLeft="590px";
-var i1=document.createElement("input");
-i1.setAttribute("type","radio");
-var lab2=document.createElement("label");
-lab2.innerHTML="EID";
-lab2.style.paddingLeft="40px";
-var i2=document.createElement("input");
-i2.setAttribute("type","radio");
-text2.innerHTML="Incase Citizen of India";
-c332.appendChild(text2);
-text2.appendChild(lab1);
-text2.appendChild(i1);
-text2.appendChild(lab2);
-text2.appendChild(i2);
-
-var row34=table.insertRow(33);
-var c341=row34.insertCell(0);
-var c342=row34.insertCell(1);
-c341.setAttribute("width","3%");
-c341.setAttribute("height","30px");
-
-var l1=document.createElement("b");
-var m9=document.createElement("label");
-m9.innerHTML="*";
-m9.style.color="red";
-var lab3=document.createElement("label");
-lab3.innerHTML="12. AADHAR Number";
-var i3=document.createElement("input");
-i3.style.marginLeft="600px";
-i3.setAttribute("type","text");
-var ch1=document.createElement("input");
-ch1.setAttribute("type","checkbox");
-l1.appendChild(m9);
-l1.appendChild(lab3);
-l1.appendChild(i3);
-c342.appendChild(l1);
-c341.appendChild(ch1);
-
-var row35=table.insertRow(34);
-var c351=row35.insertCell(0);
-var c352=row35.insertCell(1);
-c351.setAttribute("width","3%");
-c351.setAttribute("height","30px");
-
-var l1=document.createElement("p");
-var m10=document.createElement("label");
-m10.innerHTML="*";
-m10.style.color="red";
-var lab3=document.createElement("label");
-lab3.innerHTML="Name as per AADHAR Letter or as per the enrollment ID of aadhar application form";
-var i3=document.createElement("input");
-i3.style.marginLeft="190px";
-i3.setAttribute("type","text");
-var ch1=document.createElement("input");
-ch1.setAttribute("type","checkbox");
-l1.appendChild(m10);
-l1.appendChild(lab3);
-l1.appendChild(i3);
-c352.appendChild(l1);
-c351.appendChild(ch1);
-
-var row36=table.insertRow(35);
-var c361=row36.insertCell(0);
-var c362=row36.insertCell(1);
-c361.setAttribute("width","3%");
-c361.setAttribute("height","30px");
-
-var l1=document.createElement("b");
-var lab3=document.createElement("label");
-lab3.innerHTML="13. GSTN";
-var i3=document.createElement("input");
-i3.style.marginLeft="700px";
-i3.setAttribute("type","text");
-l1.appendChild(lab3);
-l1.appendChild(i3);
-c362.appendChild(l1);
-c361.appendChild(ch1);
-
-var row37=table.insertRow(36);
-var c371=row37.insertCell(0);
-var c372=row37.insertCell(1);
-c371.setAttribute("width","3%");
-c371.setAttribute("height","30px");
-
-var text1=document.createElement("b");
-text1.innerHTML="14. Mention other Permanent Account Numbers(PANs).if any,Inadvertently allotted to you. Submit proof of surrendered PAN(s) along with the application";
-var ch1=document.createElement("input");
-ch1.setAttribute("type","checkbox");
-c372.appendChild(text1);
-c371.appendChild(ch1);
-
-
-var row38=table.insertRow(37);
-var c381=row38.insertCell(0);
-var c382=row38.insertCell(1);
-c381.setAttribute("width","3%");
-c381.setAttribute("height","30px");
-
-var p=document.createElement("b");
-var lab1=document.createElement("label");
-lab1.innerHTML="PAN1";
-var i1=document.createElement("input");
-var lab2=document.createElement("label");
-lab2.innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PAN2";
-var i2=document.createElement("input");
-var lab3=document.createElement("label");
-lab3.innerHTML="<br/>PAN3";
-var i3=document.createElement("input");
-var lab4=document.createElement("label");
-lab4.innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PAN4";
-var i4=document.createElement("input");
-p.setAttribute("type","text");
-p.appendChild(lab1);
-p.appendChild(i1);
-p.appendChild(lab2);
-p.appendChild(i2);
-p.appendChild(lab3);
-p.appendChild(i3);
-p.appendChild(lab4);
-p.appendChild(i4);
-c382.appendChild(p);
-c381.appendChild(ch1);
-
-var row39=table.insertRow(38);
-var c391=row39.insertCell(0);
-var c392=row39.insertCell(1);
-c391.setAttribute("width","3%");
-c391.setAttribute("height","30px");
-
-var text1=document.createElement("b");
-text1.innerHTML="15. Verification";
-c392.appendChild(text1);
-c391.appendChild(ch1);
-
-var row40=table.insertRow(39);
-var c401=row40.insertCell(0);
-var c402=row40.insertCell(1);
-c401.setAttribute("width","3%");
-c401.setAttribute("height","30px");
-
-var p=document.createElement("b");
-var lab1=document.createElement("label");
-lab1.innerHTML="I/we&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var i1=document.createElement("input");
-var lab2=document.createElement("label");
-lab2.innerHTML=", the applicant,in the capacity of&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var i2=document.createElement("input");
-var lab3=document.createElement("label");
-lab3.innerHTML="do hereby declare that what is stated above is true to <br/>the best of my information and belief.<br/>";
-var lab4=document.createElement("label");
-lab4.innerHTML="I have enclosed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var i4=document.createElement("input");
-var lab5=document.createElement("label");
-lab5.innerHTML="(number of documents) in support of proposed changes/Corrections";
-p.setAttribute("type","text");
-p.appendChild(lab1);
-p.appendChild(i1);
-p.appendChild(lab2);
-p.appendChild(i2);
-p.appendChild(lab3);
-p.appendChild(lab4);
-p.appendChild(i4);
-p.appendChild(lab5);
-c402.appendChild(p);
-
-var row41=table.insertRow(40);
-var c411=row41.insertCell(0);
-var c412=row41.insertCell(1);
-c411.setAttribute("width","3%");
-c411.setAttribute("height","30px");
-
-var p=document.createElement("b");
-var lab1=document.createElement("label");
-lab1.innerHTML="Place&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var i1=document.createElement("input");
-p.setAttribute("type","text");
-p.appendChild(lab1);
-p.appendChild(i1);
-c412.appendChild(p);
-
-var row42=table.insertRow(41);
-var c421=row42.insertCell(0);
-var c422=row42.insertCell(1);
-c421.setAttribute("width","3%");
-c421.setAttribute("height","30px");
-
-var text1=document.createElement("b");
-text1.innerHTML="Verified today: 18/04/2020";
-c422.appendChild(text1);
-
-var row43=table.insertRow(42);
-var c431=row43.insertCell(0);
-var c432=row43.insertCell(1);
-c431.setAttribute("width","3%");
-c431.setAttribute("height","30px");
-
-var p=document.createElement("label");
-var lab1=document.createElement("label");
-lab1.innerHTML="I/we&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var i1=document.createElement("input");
-var lab2=document.createElement("label");
-lab2.innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as proof of address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var i2=document.createElement("input");
-var lab3=document.createElement("label");
-lab3.innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as proof of date of birth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var i3=document.createElement("input");
-var lab4=document.createElement("label");
-lab4.innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and as proof of PAN allotted";
-p.setAttribute("type","text");
-p.appendChild(lab1);
-p.appendChild(i1);
-p.appendChild(lab2);
-p.appendChild(i2);
-p.appendChild(lab3);
-p.appendChild(i3);
-p.appendChild(lab4);
-c432.appendChild(p);
-
-var row44=table.insertRow(43);
-var c441=row44.insertCell(0);
-var c442=row44.insertCell(1);
-c441.setAttribute("width","3%");
-c441.setAttribute("height","30px");
-
-var text2=document.createElement("b");
-var lab3=document.createElement("label");
-lab3.innerHTML="Fees Applicable";
-lab3.style.font="italic";
-var lab1=document.createElement("label");
-lab1.innerHTML="Only e-PAN card";
-lab1.style.paddingLeft="55px";
-var i1=document.createElement("input");
-i1.setAttribute("type","radio");
-var lab2=document.createElement("label");
-lab2.innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Physical PAN Card & e-pan card";
-var i2=document.createElement("input");
-i2.setAttribute("type","radio");
-text2.innerHTML="Whether you wish to have? ";
-c442.appendChild(text2);
-text2.appendChild(lab1);
-text2.appendChild(i1);
-text2.appendChild(lab2);
-text2.appendChild(i2);
-
-var row45=table.insertRow(44);
-var c451=row45.insertCell(0);
-var c452=row45.insertCell(1);
-c451.setAttribute("width","3%");
-c451.setAttribute("height","30px");
-
-var text2=document.createElement("b");
-var lab1=document.createElement("label");
-lab1.innerHTML="Other Details";
-c452.appendChild(text2);
-text2.appendChild(lab1);
-
-var row46=table.insertRow(45);
-var c461=row46.insertCell(0);
-var c462=row46.insertCell(1);
-c461.setAttribute("width","3%");
-c461.setAttribute("height","30px");
-
-var text2=document.createElement("b");
-var lab1=document.createElement("label");
-lab1.innerHTML="1. Depository Account Details";
-c462.appendChild(text2);
-text2.appendChild(lab1);
-
-var row47=table.insertRow(46);
-var c471=row47.insertCell(0);
-var c472=row47.insertCell(1);
-c471.setAttribute("width","3%");
-c471.setAttribute("height","30px");
-
-var p=document.createElement("b");
-var lab1=document.createElement("label");
-lab1.innerHTML="DP ID:&nbsp;&nbsp;";
-var i1=document.createElement("input");
-var lab2=document.createElement("label");
-lab2.innerHTML="Client ID:&nbsp;&nbsp;";
-var i2=document.createElement("input");
-p.setAttribute("type","text");
-p.appendChild(lab1);
-p.appendChild(i1);
-p.appendChild(lab2);
-p.appendChild(i2);
-c472.appendChild(p);
-
-var row48=table.insertRow(47);
-var c481=row48.insertCell(0);
-var c482=row48.insertCell(1);
-c481.setAttribute("width","3%");
-c481.setAttribute("height","30px");
-
-
-var text2=document.createElement("b");
-var lab1=document.createElement("label");
-lab1.innerHTML="2. Payment Details";
-c482.appendChild(text2);
-text2.appendChild(lab1);
-
-var row49=table.insertRow(48);
-var c491=row49.insertCell(0);
-var c492=row49.insertCell(1);
-c491.setAttribute("width","3%");
-c491.setAttribute("height","30px");
-
-
-var text2=document.createElement("b");
-var lab1=document.createElement("label");
-var ch1=document.createElement("input");
-ch1.setAttribute("type","checkbox");
-lab1.innerHTML="Online Payment";
-c492.appendChild(text2);
-c491.appendChild(ch1);
-text2.appendChild(lab1);
-document.body.appendChild(table)
-
-var text=document.createElement("label");
-var lab1=document.createElement("label");
-lab1.innerHTML="Yes&nbsp;&nbsp;&nbsp;";
-lab1.style.paddingLeft="55px";
-var i1=document.createElement("input");
-i1.setAttribute("type","radio");
-var lab2=document.createElement("label");
-lab2.innerHTML="&nbsp;&nbsp;&nbsp;No";
-var i2=document.createElement("input");
-i2.setAttribute("type","radio");
-text.innerHTML="For paperless PAN application:&nbsp;&nbsp;"
-text.appendChild(lab1);
-text.appendChild(i1);
-text.appendChild(lab2);
-text.appendChild(i2);
-document.body.appendChild(text);
-
-var text1=document.createElement("label");
-var lab1=document.createElement("label");
-lab1.innerHTML="<br/><br/>DSC&nbsp;&nbsp;&nbsp;";
-var i1=document.createElement("input");
-i1.setAttribute("type","radio");
-text1.appendChild(lab1);
-text1.appendChild(i1);
-document.body.appendChild(text1);
-
-
-
-var text1=document.createElement("label");
-var lab1=document.createElement("label");
-lab1.innerHTML="<br/><br/>Upload Photo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var i1=document.createElement("input");
-i1.setAttribute("type","file");
-text1.appendChild(lab1);
-text1.appendChild(i1);
-document.body.appendChild(text1);
-
-var text1=document.createElement("label");
-var lab1=document.createElement("label");
-lab1.innerHTML="<br/><br/>Upload Document&nbsp;&nbsp;&nbsp;&nbsp;";
-var i1=document.createElement("input");
-i1.setAttribute("type","file");
-text1.appendChild(lab1);
-text1.appendChild(i1);
-document.body.appendChild(text1);
-
-var text1=document.createElement("label");
-var lab1=document.createElement("label");
-lab1.innerHTML="<br/><br/>Upload Signature&nbsp;&nbsp;&nbsp;";
-var i1=document.createElement("input");
-i1.setAttribute("type","file");
-text1.appendChild(lab1);
-text1.appendChild(i1);
-document.body.appendChild(text1);
-
-var p=document.createElement("label");
-var lab1=document.createElement("label");
-lab1.innerHTML="<BR/><BR/>ALREADY UPLOADED PHOTO:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var i1=document.createElement("input");
-p.setAttribute("type","text");
-p.appendChild(lab1);
-p.appendChild(i1);
-document.body.appendChild(p);
-
-var p=document.createElement("label");
-var lab1=document.createElement("label");
-lab1.innerHTML="<BR/><BR/>ALREADY UPLOADED SIGNATURE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var i1=document.createElement("input");
-p.setAttribute("type","text");
-p.appendChild(lab1);
-p.appendChild(i1);
-document.body.appendChild(p);
-
-var p=document.createElement("label");
-var lab1=document.createElement("label");
-lab1.innerHTML="<BR/><BR/>ALREADY UPLOADED DOCUMENTS:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-var i1=document.createElement("input");
-p.setAttribute("type","text");
-p.appendChild(lab1);
-p.appendChild(i1);
-document.body.appendChild(p);
-document.getElementById("table").submit();
-</script>
-</body>
+	<head>
+		<title>New PAN card or/And changes or correction in Pan Data</title>
+			<style type="text/css">
+				body
+				{
+					font-family:Helvetica, Arial, sans-serif;
+				}
+			</style>
+	</head>
+	<body id="bodyofpancard">
+		<script>
+			var b=document.getElementById("bodyofpancard");
+				b.style.backgroundColor="#EBFEC3";
+				
+			var pancard=document.createElement("table");
+				pancard.setAttribute("width","100%");
+				pancard.setAttribute("border","1px","solid");
+				pancard.setAttribute("style","border-collapse:collapse");
+
+
+			var heading=document.createElement("caption");
+				var head1=document.createElement("b");
+					head1.innerHTML="Request For New PAN Card Or/And Changes Or Connection in PAN Data";
+					head1.style.color="white";
+				heading.appendChild(head1);
+				var head2=document.createElement("p");
+					head2.innerHTML="<i>Fields marked with <font style=color:red>*</font> (asterisk) are mandatory. To avoid mistakes(s). please refer <font style=color:orange><u>guidelines</u></font> and <font style=color:orange><u>instructions</u></font></i>";
+					head2.style.height="3px";
+					head2.style.color="white";
+				heading.appendChild(head2);
+				pancard.appendChild(heading);
+			heading.setAttribute("style","background-color:#ca1b40");
+			document.body.appendChild(pancard);
+			
+			var row1 = pancard.insertRow(0);
+			  var cell1 = row1.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row1.insertCell(1);
+				cell2.innerHTML = "<b><font style=color:red>*</font> Whether citizen of India</b> <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yes</label><input type=radio></input><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type=radio></input>";
+						
+			var row2 = pancard.insertRow(1);
+			  var cell1 = row2.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row2.insertCell(1);
+				cell2.innerHTML = "<b><font style=color:red>*</font> Permanent Account Number(PAN)</b> <input type=textarea></input>";
+				
+			var row3 = pancard.insertRow(2);
+			  var cell1 = row3.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "<input type=checkbox></input>";
+			  var cell2 = row3.insertCell(1);
+				cell2.innerHTML = "<b><font style=color:red>*</font> 1. Name</b>";
+				
+			var row4 = pancard.insertRow(3);
+			  var cell1 = row4.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row4.insertCell(1);
+				cell2.innerHTML = "<b>Title</b><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shri/Mr</label><input type=radio></input><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Smt/Mrs</label><input type=radio></input><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kumari/Ms</label><input type=radio></input><label style=color:grey>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M/s</label>";
+			
+			var row5 = pancard.insertRow(4);
+			  var cell1 = row5.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row5.insertCell(1);
+				cell2.innerHTML = "<b>Last Name/Surname</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>First Name</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Middle Name</b><br><input type=textarea></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>";
+		
+			var row6 = pancard.insertRow(5);
+			  var cell1 = row6.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row6.insertCell(1);
+				cell2.innerHTML = "<b><font style=color:red>*</font> Name as you would like it printed on the card</b><font style=color:blue> (Prefix like Shri,Smt,Kumari,Late,Dr,CA,Ms,Mr,M/s ec..,are not allowed.)</font>";
+
+			var row7 = pancard.insertRow(6);
+			  var cell1 = row7.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row7.insertCell(1);
+				cell2.innerHTML = "<input type=textarea style=width:350px></input>";
+				
+			var row8 = pancard.insertRow(7);
+			  var cell1 = row8.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row8.insertCell(1);
+				cell2.innerHTML = "<b> Details of Parents. </b><font style=color:blue> (Prefix like Shri,Smt,Kumari,Late,Dr,CA,Ms,Mr,M/s ec..,are not allowed.)</font>";	
+		
+			var row9 = pancard.insertRow(8);
+			  var cell1 = row9.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row9.insertCell(1);
+				cell2.innerHTML = "<b> Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother only </b><label>&nbsp;&nbsp;&nbsp;&nbsp;Yes</label><input type=radio></input><label>&nbsp;&nbsp;&nbsp;&nbsp;No</label><input type=radio></input>";
+            
+			var row10 = pancard.insertRow(9);
+			  var cell1 = row10.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "<input type=checkbox></input>";
+			  var cell2 = row10.insertCell(1);
+				  cell2.innerHTML="<b><font style=color:red>*</font> Father's Name</b><font style=color:blue> (Mandatory field.Even married women should give father's name only)</font>"
+	
+			var row11 = pancard.insertRow(10);
+			  var cell1 = row11.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row11.insertCell(1);
+				cell2.innerHTML = "<b>Last Name/Surname</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>First Name</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Middle Name</b><br><input type=textarea></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>";
+	
+			var row12 = pancard.insertRow(11);
+			  var cell1 = row12.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "<input type=checkbox></input>";
+			  var cell2 = row12.insertCell(1);
+				  cell2.innerHTML="<font style=color:blue>Mother's Name(Mandatory field.Even married women should give father's name only)</font>"
+	
+			var row13 = pancard.insertRow(12);
+			  var cell1 = row13.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row13.insertCell(1);
+				cell2.innerHTML = "<b>Last Name/Surname</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>First Name</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Middle Name</b><br><input type=textarea></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>";
+	
+			var row14 = pancard.insertRow(13);
+			  var cell1 = row14.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row14.insertCell(1);
+				  cell2.innerHTML="<b><font style=color:red>*</font> 4. Select Parent name which is to be printed on the card</b><br><font style=color:blue>(In case no option is provided then PAN card will be issued with father's name)</font><label>&nbsp;&nbsp;&nbsp;&nbsp;Father Name</label><input type=radio></input><label><label>&nbsp;&nbsp;&nbsp;&nbsp;Mother Name</label><input type=radio></input>"
+
+			var row15 = pancard.insertRow(14);
+			  var cell1 = row15.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "<input type=checkbox></input>";
+			  var cell2 = row15.insertCell(1);
+				  cell2.innerHTML="<b><font style=color:red>*</font> 5. Date of Birth/Incoporation/Agreement/Partnership<br>or Trust Deed/Formation of Body of individuals/<br>Association of Persons</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select><option>DD</option></select><select><option>MM</option></select><input type=textarea style=width:100px></input>"
+	
+			var row16 = pancard.insertRow(15);
+			  var cell1 = row16.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "<input type=checkbox></input>";
+			  var cell2 = row16.insertCell(1);
+				  cell2.innerHTML="<b><font style=color:red>*</font> 6. Gender</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>&nbsp;&nbsp;&nbsp;&nbsp;Male</label><input type=radio></input><label>&nbsp;&nbsp;&nbsp;&nbsp;Female</label><input type=radio></input><label>&nbsp;&nbsp;&nbsp;&nbsp;TransGender</label><input type=radio></input>"
+	
+			var row17 = pancard.insertRow(16);
+			  var cell1 = row17.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "<input type=checkbox></input>";
+			  var cell2 = row17.insertCell(1);
+				cell2.innerHTML = "<b> 7. Photo Mismatch</b>";
+				
+			var row18 = pancard.insertRow(17);
+			  var cell1 = row18.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "<input type=checkbox></input>";
+			  var cell2 = row18.insertCell(1);
+				cell2.innerHTML = "<b> 8. Signature Mismatch</b>";
+				
+			var row19 = pancard.insertRow(18);
+			  var cell1 = row19.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "<input type=checkbox></input>";
+			  var cell2 = row19.insertCell(1);
+				  cell2.innerHTML="<b><font style=color:red>*</font> 9. Address for Communication</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>&nbsp;&nbsp;&nbsp;&nbsp;Residential</label><input type=radio></input><label>&nbsp;&nbsp;&nbsp;&nbsp;Office</label><input type=radio></input>"
+	
+			var row20 = pancard.insertRow(19);
+			  var cell1 = row20.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row20.insertCell(1);
+				cell2.innerHTML = "<b> Office Name </b><i>(to be filled only in case of office address)</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>";
+				
+			var row21 = pancard.insertRow(20);
+			  var cell1 = row21.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row21.insertCell(1);
+				cell2.innerHTML = "<b> Flat/Door/Block No.</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>";
+			
+			var row22 = pancard.insertRow(21);
+			  var cell1 = row22.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row22.insertCell(1);
+				cell2.innerHTML = "<b>Name of Premises/Buliding/Village</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>";
+			
+			var row23 = pancard.insertRow(22);
+			  var cell1 = row23.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row23.insertCell(1);
+				cell2.innerHTML = "<b>Road/Street/Lane/Post Office</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>";
+			
+			var row24 = pancard.insertRow(23);
+			  var cell1 = row24.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row24.insertCell(1);
+				cell2.innerHTML = "<b>Area/Locality/Taluka/Sub-Division</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>";
+			
+			var row25 = pancard.insertRow(24);
+			  var cell1 = row25.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row25.insertCell(1);
+				cell2.innerHTML = "<b>Town/City/District</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>";
+			
+			var row26 = pancard.insertRow(25);
+			  var cell1 = row26.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row26.insertCell(1);
+				cell2.innerHTML = "<b>State/Union Territory</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select><option>--Please Select--</option></select>";
+			
+			var row27 = pancard.insertRow(26);
+			  var cell1 = row27.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row27.insertCell(1);
+				cell2.innerHTML = "<b>PIN</b><i> (Indicating PIN is mandatory)</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>";
+			
+			var row28 = pancard.insertRow(27);
+			  var cell1 = row28.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row28.insertCell(1);
+				cell2.innerHTML = "<b>Country</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select><option>--Please Select--</option></select>";
+			
+			var row29 = pancard.insertRow(28);
+			  var cell1 = row29.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row29.insertCell(1);
+				cell2.innerHTML = "<b>Zip</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>";
+			
+			var row30 = pancard.insertRow(29);
+			  var cell1 = row30.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "<input type=checkbox></input>";
+			  var cell2 = row30.insertCell(1);
+				cell2.innerHTML = "<b> 10.If you desire to update your other address, give required details & <u>Submit proof of other address also.</u></b>";
+				
+			var row31 = pancard.insertRow(30);
+			  var cell1 = row31.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "<input type=checkbox></input>";
+			  var cell2 = row31.insertCell(1);
+				cell2.innerHTML = "<b><font style=color:red>*</font> 11. Telephone No.<br(Country code is compulsary)></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Area/STD Code<input type=textarea></input></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Telephone No./Mobile No.<input type=textarea></input></label>";
+	
+			var row32 = pancard.insertRow(31);
+			  var cell1 = row32.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row32.insertCell(1);
+				cell2.innerHTML = "<b> E-mail ID</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>";
+			
+			var row33 = pancard.insertRow(32);
+			  var cell1 = row33.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row33.insertCell(1);
+				cell2.innerHTML = "In case of a citizen of India, then&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=radio>AADHAAR</input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=radio>EID</input>";
+
+			var row34 = pancard.insertRow(33);
+			  var cell1 = row34.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row34.insertCell(1);
+				cell2.innerHTML = "<b> 12.AADHAAR number:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>";
+			
+			var row35 = pancard.insertRow(34);
+			  var cell1 = row35.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row35.insertCell(1);
+				cell2.innerHTML = "<b> 13.GSTN</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=textarea></input>";
+
+			var row36 = pancard.insertRow(35);
+			  var cell1 = row36.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "<input type=checkbox></input>";
+			  var cell2 = row36.insertCell(1);
+				cell2.innerHTML = "<b> 14. Mention other Permanent Account Numbers(PANs) if any, Inadvertently alloted to you. <u>Submit proof of surrendered PAN(s) along with the application.</u></b>";
+	
+			var row37 = pancard.insertRow(36);
+			  var cell1 = row37.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row37.insertCell(1);
+				cell2.innerHTML = "<b>PAN1 </b><input type=textarea></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>PAN2 </b><input type=textarea></input>";
+	
+			var row38 = pancard.insertRow(37);
+			  var cell1 = row38.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row38.insertCell(1);
+				cell2.innerHTML = "<b>PAN3 </b><input type=textarea></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>PAN4 </b><input type=textarea></input>";
+
+			var row39 = pancard.insertRow(38);
+			  var cell1 = row39.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row39.insertCell(1);
+				cell2.innerHTML = "<b> 15. Verifictaion</b>";
+	
+			var row40 = pancard.insertRow(39);
+			  var cell1 = row40.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row40.insertCell(1);
+				cell2.innerHTML = "I/We  <input type=textarea style=width:500px></input> ,the applicant,in the capacity of <select style=width:250px><option>--Please select--</option></select>do hereby declare that what is started above is true to<br>the best of my knowledge and belief.<br>I have enclosed <input type=textarea></input> (number of documents) in support of propsed changes/corrections." ;
+	
+			var row41 = pancard.insertRow(40);
+			  var cell1 = row41.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row41.insertCell(1);
+				cell2.innerHTML = "Place <input type=textarea style=width:300px></input>";
+				
+			var row42 = pancard.insertRow(41);
+			  var cell1 = row42.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row42.insertCell(1);
+				cell2.innerHTML = "Verified today, the 18-04-2020";	
+				
+			var row43 = pancard.insertRow(42);
+			  var cell1 = row43.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row43.insertCell(1);
+				cell2.innerHTML = "I/We have enclosed<br><select style=width:1300px><option>--Please Select</option></select> as proof<br>of identify, <select style=width:1000px><option>--Please Select</option></select>as proof of address<br><select style=width:1300px><option>--Please Select</option></select>as proof of date of birth<br>and<select style=width:300px><option>--Please Select</option></select> as proof of PAN allotted.";	
+	
+			var row44 = pancard.insertRow(43);
+			  var cell1 = row44.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row44.insertCell(1);
+				cell2.innerHTML = "<b>Whether you wish to have?</b><label>&nbsp;&nbsp;&nbsp;&nbsp;<input type=radio></input>Physical PAN card & e-PAN Card</label><label>&nbsp;&nbsp;&nbsp;&nbsp;<input type=radio></input>Only e-PAN Card</label>&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Fees Applicable</u></b>";	
+	
+			var row45 = pancard.insertRow(44);
+			  var cell1 = row45.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row45.insertCell(1);
+				cell2.innerHTML = "<b>Other Details</b>";	
+				
+			var row46 = pancard.insertRow(45);
+			  var cell1 = row46.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row46.insertCell(1);
+				cell2.innerHTML = "<b>1. Depository Account Details</b>";
+
+			var row47 = pancard.insertRow(46);
+			  var cell1 = row47.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row47.insertCell(1);
+				cell2.innerHTML = "<b>DP ID: </b><input type=textarea></input>&nbsp;&nbsp;&nbsp;&nbsp;<b>Client ID: </b><input type=textarea></input>";	
+	
+			var row48 = pancard.insertRow(47);
+			  var cell1 = row48.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "";
+			  var cell2 = row48.insertCell(1);
+				cell2.innerHTML = "<b>2. Payment Details</b>";
+				
+			var row49 = pancard.insertRow(46);
+			  var cell1 = row49.insertCell(0);
+				  cell1.setAttribute("width","2%");
+				  cell1.innerHTML = "<input type=radio></input>";
+			  var cell2 = row49.insertCell(1);
+				cell2.innerHTML = "<b>Online Payment</b>";
+				
+			var text=document.createElement("label");
+			var lab1=document.createElement("label");
+				lab1.innerHTML="Yes&nbsp;&nbsp;&nbsp;";
+				lab1.style.paddingLeft="55px";
+			var i1=document.createElement("input");
+				i1.setAttribute("type","radio");
+			var lab2=document.createElement("label");
+				lab2.innerHTML="&nbsp;&nbsp;&nbsp;No";
+			var i2=document.createElement("input");
+				i2.setAttribute("type","radio");
+				text.innerHTML="For paperless PAN application:&nbsp;&nbsp;"
+				text.appendChild(lab1);
+				text.appendChild(i1);
+				text.appendChild(lab2);
+				text.appendChild(i2);
+				document.body.appendChild(text);
+
+			var text1=document.createElement("label");
+			var lab1=document.createElement("label");
+				lab1.innerHTML="<br/><br/>DSC&nbsp;&nbsp;&nbsp;";
+			var i1=document.createElement("input");
+				i1.setAttribute("type","radio");
+				text1.appendChild(lab1);
+				text1.appendChild(i1);
+				document.body.appendChild(text1);
+
+			var text1=document.createElement("label");
+			var lab1=document.createElement("label");
+				lab1.innerHTML="<br/><br/>Upload Photo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+			var i1=document.createElement("input");
+				i1.setAttribute("type","file");
+				text1.appendChild(lab1);
+				text1.appendChild(i1);
+				document.body.appendChild(text1);
+
+			var text1=document.createElement("label");
+			var lab1=document.createElement("label");
+				lab1.innerHTML="<br/><br/>Upload Document&nbsp;&nbsp;&nbsp;&nbsp;";
+			var i1=document.createElement("input");
+				i1.setAttribute("type","file");
+				text1.appendChild(lab1);
+				text1.appendChild(i1);
+				document.body.appendChild(text1);
+				
+			var text1=document.createElement("label");
+			
+			var lab1=document.createElement("label");
+				lab1.innerHTML="<br/><br/>Upload Signature&nbsp;&nbsp;&nbsp;";
+			var i1=document.createElement("input");
+				i1.setAttribute("type","file");
+				text1.appendChild(lab1);
+				text1.appendChild(i1);
+				document.body.appendChild(text1);
+
+			var p=document.createElement("label");
+			var lab1=document.createElement("label");
+				lab1.innerHTML="<BR/><BR/>ALREADY UPLOADED PHOTO:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+			var i1=document.createElement("input");
+				p.setAttribute("type","text");
+				p.appendChild(lab1);
+				p.appendChild(i1);
+				document.body.appendChild(p);
+
+			var p=document.createElement("label");
+			var lab1=document.createElement("label");
+				lab1.innerHTML="<BR/><BR/>ALREADY UPLOADED SIGNATURE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+			var i1=document.createElement("input");
+				p.setAttribute("type","text");
+				p.appendChild(lab1);
+				p.appendChild(i1);
+				document.body.appendChild(p);
+
+			var p=document.createElement("label");
+			var lab1=document.createElement("label");
+				lab1.innerHTML="<BR/><BR/>ALREADY UPLOADED DOCUMENTS:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+			var i1=document.createElement("input");
+				p.setAttribute("type","text");
+				p.appendChild(lab1);
+				p.appendChild(i1);
+				document.body.appendChild(p);
+				
+			var sub=document.createElement("button");
+				sub.innerHTML="<center>Submit</center>";
+			document.body.appendChild(sub);
+	</script>
+	</body>
 </html>
